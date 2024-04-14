@@ -1,0 +1,196 @@
+{
+    "groups": {
+        "Groep A": [
+            {
+                "id": 1,
+                "homeTeam": "Duitsland",
+                "awayTeam": "Schotland"
+            },
+            {
+                "id": 2,
+                "homeTeam": "Hongarije",
+                "awayTeam": "Zwitserland"
+            },
+            {
+                "id": 3,
+                "homeTeam": "Duitsland",
+                "awayTeam": "Hongarije"
+            },
+            {
+                "id": 4,
+                "homeTeam": "Schotland",
+                "awayTeam": "Zwitserland"
+            },
+            {
+                "id": 5,
+                "homeTeam": "Zwitserland",
+                "awayTeam": "Duitsland"
+            },
+            {
+                "id": 6,
+                "homeTeam": "Schotland",
+                "awayTeam": "Hongarije"
+            }
+        ],
+        "Groep B": [
+            {
+                "id": 7,
+                "homeTeam": "Spanje",
+                "awayTeam": "Kroatië"
+            },
+            {
+                "id": 8,
+                "homeTeam": "Italië",
+                "awayTeam": "Albanië"
+            },
+            {
+                "id": 9,
+                "homeTeam": "Kroatië",
+                "awayTeam": "Italië"
+            },
+            {
+                "id": 10,
+                "homeTeam": "Albanië",
+                "awayTeam": "Spanje"
+            },
+            {
+                "id": 11,
+                "homeTeam": "Spanje",
+                "awayTeam": "Italië"
+            },
+            {
+                "id": 12,
+                "homeTeam": "Albanië",
+                "awayTeam": "Kroatië"
+            }
+        ],
+        "Groep C": [
+            {
+                "id": 13,
+                "homeTeam": "Slovenië",
+                "awayTeam": "Denemarken"
+            },
+            {
+                "id": 14,
+                "homeTeam": "Servië",
+                "awayTeam": "Engeland"
+            },
+            {
+                "id": 15,
+                "homeTeam": "Denemarken",
+                "awayTeam": "Servië"
+            },
+            {
+                "id": 16,
+                "homeTeam": "Engeland",
+                "awayTeam": "Slovenië"
+            },
+            {
+                "id": 17,
+                "homeTeam": "Slovenië",
+                "awayTeam": "Servië"
+            },
+            {
+                "id": 18,
+                "homeTeam": "Engeland",
+                "awayTeam": "Denemarken"
+            }
+        ],
+        "Groep D": [
+            {
+                "id": 19,
+                "homeTeam": "Polen",
+                "awayTeam": "Nederland"
+            },
+            {
+                "id": 20,
+                "homeTeam": "Oostenrijk",
+                "awayTeam": "Frankrijk"
+            },
+            {
+                "id": 21,
+                "homeTeam": "Nederland",
+                "awayTeam": "Oostenrijk"
+            },
+            {
+                "id": 22,
+                "homeTeam": "Frankrijk",
+                "awayTeam": "Polen"
+            },
+            {
+                "id": 23,
+                "homeTeam": "Polen",
+                "awayTeam": "Oostenrijk"
+            },
+            {
+                "id": 24,
+                "homeTeam": "Frankrijk",
+                "awayTeam": "Nederland"
+            }
+        ],
+        "Groep E": [
+            {
+                "id": 25,
+                "homeTeam": "Roemenië",
+                "awayTeam": "Oekraïne"
+            },
+            {
+                "id": 26,
+                "homeTeam": "België",
+                "awayTeam": "Slowakije"
+            },
+            {
+                "id": 27,
+                "homeTeam": "Oekraïne",
+                "awayTeam": "België"
+            },
+            {
+                "id": 28,
+                "homeTeam": "Slowakije",
+                "awayTeam": "Roemenië"
+            },
+            {
+                "id": 29,
+                "homeTeam": "Roemenië",
+                "awayTeam": "België"
+            },
+            {
+                "id": 30,
+                "homeTeam": "Slowakije",
+                "awayTeam": "Oekraïne"
+            }
+        ],
+        "Groep F": [
+            {
+                "id": 31,
+                "homeTeam": "Turkije",
+                "awayTeam": "Georgië"
+            },
+            {
+                "id": 32,
+                "homeTeam": "Portugal",
+                "awayTeam": "Tsjechië"
+            },
+            {
+                "id": 33,
+                "homeTeam": "Georgië",
+                "awayTeam": "Portugal"
+            },
+            {
+                "id": 34,
+                "homeTeam": "Tsjechië",
+                "awayTeam": "Turkije"
+            },
+            {
+                "id": 35,
+                "homeTeam": "Turkije",
+                "awayTeam": "Portugal"
+            },
+            {
+                "id": 36,
+                "homeTeam": "Tsjechië",
+                "awayTeam": "Georgië"
+            }
+        ]
+    }
+}

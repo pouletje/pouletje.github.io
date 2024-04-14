@@ -1,0 +1,99 @@
+{
+    "bonus": {
+        "io": [
+            {
+                "question": "Wie wordt de topscorer?",
+                "placeholder": "Justin Bijlow",
+                "note": "",
+                "points": "15pt",
+                "id": "1"
+            },
+            {
+                "question": "Wie wordt speler van het toernooi?",
+                "placeholder": "Nathan Rutjes",
+                "note": "",
+                "points": "15pt",
+                "id": "2"
+            },
+            {
+                "question": "Welk land wordt Europees kampioen?",
+                "placeholder": "Argentinië",
+                "note": "",
+                "points": "15pt",
+                "id": "3"
+            },
+            {
+                "question": "Wie wint het poultje?",
+                "placeholder": "Kevin",
+                "note": "Excl. deze vraag",
+                "points": "15pt",
+                "id": "4"
+            },
+            {
+                "question": "Welk land krijgt de meeste kaarten?",
+                "placeholder": "Land",
+                "note": "Iedere getoonde kaart telt voor één.",
+                "points": "15pt",
+                "id": "5"
+            },
+            {
+                "question": "Hoe ver komt Nederland?",
+                "placeholder": "Winnaar",
+                "note": "",
+                "points": "15pt",
+                "id": "6"
+            }
+        ],
+        "incremental": [
+            {
+                "question": "Wie is je saboteur?",
+                "placeholder": "Jake van Tilburg",
+                "points": "10",
+                "event": "eigen doelpunt",
+                "id": "7"
+            },
+            {
+                "question": "Wie is je schoffelaar?",
+                "placeholder": "Pepe",
+                "points": "3",
+                "event": "getoonde kaart",
+                "id": "8"
+            },
+            {
+                "question": "Wie is je supersub?",
+                "placeholder": "Wout Weghorst",
+                "points": "5",
+                "event": "doelpunt als invaller",
+                "id": "9"
+            }
+        ],
+        "range": [
+            {
+                "question": "Hoeveel doelpunten worden er gescoord?",
+                "placeholder": "142 in EURO 2020",
+                "note": "51 wedstrijden in totaal\nBij gelijkspel wordt deze vraag gebruikt als tiebreaker.",
+                "points": "20",
+                "deviation": "goal",
+                "decrease": "5",
+                "id": "10"
+            }
+        ],
+        "rules": [
+            {
+                "rule": "Player of the Day",
+                "explanation": "Iedere dagwinnaar krijgt 1 extra punt.",
+                "exception": "Bij meerdere dagwinnaars krijgen zij allemaal een extra punt."
+            },
+            {
+                "rule": "King of the Draws",
+                "explanation": "De speler die de meeste gelijke spelen voorspelt krijgt 10 extra punten.",
+                "exception": "De uitslagen hoeven niet te kloppen.\nBij meerdere 'kings of the draws' krijgen zij allen 10 extra punten."
+            },
+            {
+                "rule": "Country Specialist",
+                "explanation": "Voor ieder land waarvan je alledrie uitslagen goed hebt voorspeld krijg je 7 extra punten (gelijk aan 1 uitslag).",
+                "exception": ""
+            }
+        ]
+    }
+}
