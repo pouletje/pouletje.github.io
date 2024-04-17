@@ -5,50 +5,50 @@
                 "question": "Wie wordt de topscorer?",
                 "placeholder": "Justin Bijlow",
                 "note": "",
-                "points": "15pt",
+                "points": "12pt",
                 "id": "1"
             },
             {
                 "question": "Wie wordt speler van het toernooi?",
                 "placeholder": "Nathan Rutjes",
                 "note": "",
-                "points": "15pt",
+                "points": "12pt",
                 "id": "2"
             },
             {
                 "question": "Welk land wordt Europees kampioen?",
                 "placeholder": "Argentinië",
                 "note": "",
-                "points": "15pt",
+                "points": "12pt",
                 "id": "3"
             },
             {
-                "question": "Wie wint het poultje?",
+                "question": "Wie wint het pouletje?",
                 "placeholder": "Kevin",
                 "note": "Excl. deze vraag",
-                "points": "15pt",
+                "points": "12pt",
                 "id": "4"
             },
             {
-                "question": "Welk land krijgt de meeste kaarten?",
+                "question": "Welk land krijgt de meeste kaarten in de groepsfase?",
                 "placeholder": "Land",
                 "note": "Iedere getoonde kaart telt voor één.",
-                "points": "15pt",
+                "points": "12pt",
                 "id": "5"
             },
             {
                 "question": "Hoe ver komt Nederland?",
                 "placeholder": "Winnaar",
                 "note": "",
-                "points": "15pt",
+                "points": "12pt",
                 "id": "6"
             }
         ],
         "incremental": [
             {
                 "question": "Wie is je saboteur?",
-                "placeholder": "Jake van Tilburg",
-                "points": "10",
+                "placeholder": "Mike van der Hoorn",
+                "points": "7",
                 "event": "eigen doelpunt",
                 "id": "7"
             },
@@ -62,7 +62,7 @@
             {
                 "question": "Wie is je supersub?",
                 "placeholder": "Wout Weghorst",
-                "points": "5",
+                "points": "7",
                 "event": "doelpunt als invaller",
                 "id": "9"
             }

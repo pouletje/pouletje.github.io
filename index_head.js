@@ -1,10 +1,11 @@
 
 function autoFillKOR16() {
     function generateAutoFilledKOR16(ranks) {
-        function createInputField(ph) {
+        function createInputField(ph, field_name) {
             const field = document.createElement('input');
             field.classList.add('ko-input-field');
             field.type = 'text';
+            field.name = field_name;
             field.placeholder = ph;
             field.style.width = '95%';
             return field;
@@ -15,20 +16,20 @@ function autoFillKOR16() {
 
         const grid_temp = document.createElement('div');
 
+        i = 0
         ranks.forEach(group_rank => {
-            const r16_inputfield_1 = createInputField("Land");
+            const r16_inputfield_1 = createInputField("Land", "r16-" + i);
             r16_inputfield_1.setAttribute('value',group_rank[0].country);
-            const r16_inputfield_2 = createInputField("Land");
-            console.log(group_rank[0].country);
+            i++
+            const r16_inputfield_2 = createInputField("Land", "r16-" + i);
             r16_inputfield_2.setAttribute('value',group_rank[1].country);
-            console.log(r16_inputfield_1);
+            i++
             grid_temp.appendChild(r16_inputfield_1);
             grid_temp.appendChild(r16_inputfield_2);
-            console.log(grid_temp);
         });
 
-        for (let i = 0; i < 4; i++) {
-            const r16_wildcard = createInputField("Land");
+        for (let i = 12; i < 16; i++) {
+            const r16_wildcard = createInputField("Land", "r16-" + i);
             grid_temp.appendChild(r16_wildcard);
         }
 
@@ -38,7 +39,6 @@ function autoFillKOR16() {
     current_rankings = makeRankings();
 
     r16_fields = generateAutoFilledKOR16(current_rankings);
-
 
     const grid = document.getElementById('ko-r16-grid');
 
@@ -54,17 +54,18 @@ function confirmSubmit(e) {
 
 function updateKnockoutsPage() {
     function generateInputFields() {
-        function createRoundTitle(my_title) {
+        function createRoundTitle(my_title, points_per_answer) {
             const title_element = document.createElement('h3');
             title_element.classList.add('ko-round-title');
-            title_element.innerText = my_title;
+            title_element.innerHTML = `${my_title} <span class="points">${points_per_answer}pts</span>`;
             return title_element;
         }
 
-        function createInputField(ph) {
+        function createInputField(ph, field_name) {
             const field = document.createElement('input');
             field.classList.add('ko-input-field');
             field.type = 'text';
+            field.name = field_name;
             field.placeholder = ph;
             field.style.width = '95%';
             return field;
@@ -82,7 +83,7 @@ function updateKnockoutsPage() {
         const inputDiv = document.createElement('div');
         inputDiv.id = 'ko-input';
         const r16_div = document.createElement('div');
-        const r16_title = createRoundTitle('Laatste 16');
+        const r16_title = createRoundTitle('Laatste 16', '5');
         r16_div.appendChild(r16_title);
         const autoFillButton = document.createElement('button');
         autoFillButton.setAttribute('onclick','autoFillKOR16()');
@@ -93,39 +94,39 @@ function updateKnockoutsPage() {
         const r16_grid = createGrid(4);
         r16_grid.id = 'ko-r16-grid';
         const qf_div = document.createElement('div');
-        qf_div.appendChild(createRoundTitle('Kwartfinale'));
+        qf_div.appendChild(createRoundTitle('Kwartfinale', '10'));
         const qf_grid = createGrid(4);
         const sf_div = document.createElement('div');
-        sf_div.appendChild(createRoundTitle('Halve finale'));
+        sf_div.appendChild(createRoundTitle('Halve finale', '14'));
         const sf_grid = createGrid(4);
         const f_div = document.createElement('div');
-        f_div.appendChild(createRoundTitle('Finale'));
+        f_div.appendChild(createRoundTitle('Finale', '18'));
         const f_grid = createGrid(2);
         const w_div = document.createElement('div');
-        w_div.appendChild(createRoundTitle('Winnaar'));
+        w_div.appendChild(createRoundTitle('Winnaar', '20'));
         const w_grid = createGrid(1);
         for (let i = 0; i < 16; i++) {
-            const r16_country = createInputField("Land");
+            const r16_country = createInputField("Land", "r16-" + i);
             r16_grid.appendChild(r16_country);
         }
         r16_div.appendChild(r16_grid);
         for (let i = 0; i < 8; i++) {
-            const qf_country = createInputField("Kwartfinalist");
+            const qf_country = createInputField("Kwartfinalist", "qf-" + i);
             qf_grid.appendChild(qf_country);
         }
         qf_div.appendChild(qf_grid);
         for (let i = 0; i < 4; i++) {
-            const sf_country = createInputField("Halve finalist");
+            const sf_country = createInputField("Halve finalist", "sf-" + i);
             sf_grid.appendChild(sf_country);
         }
         sf_div.appendChild(sf_grid);
         for (let i = 0; i < 2; i++) {
-            const f_country = createInputField("Finalist");
+            const f_country = createInputField("Finalist", "f-" + i);
             f_country.style.width = "98%";
             f_grid.appendChild(f_country);
         }
         f_div.appendChild(f_grid);
-        w_field = createInputField("Winnaar");
+        w_field = createInputField("Winnaar", "w-0");
         w_field.style.width = "100%";
         w_grid.appendChild(w_field);
         w_div.appendChild(w_grid);
@@ -290,6 +291,7 @@ function makeRankings() {
 }
 
 function showGroup(groupIndex) {
+    updatePouleWinnerPlaceholder();
     const groupDivs = document.querySelectorAll('.group');
     const progress = document.getElementById('progress');
     const totalGroups = groupDivs.length;
@@ -297,7 +299,6 @@ function showGroup(groupIndex) {
     const percentage = (currentGroup / totalGroups) * 100;
     progress.style.width = percentage + '%';
 
-    const username = document.getElementById('username').value || document.getElementById('username').placeholder
     groupDivs.forEach((groupDiv, index) => {
         if (index === groupIndex) {
             groupDiv.style.display = 'block';
@@ -317,13 +318,16 @@ function showGroup(groupIndex) {
     if (groupIndex === groupDivs.length - 1) {
         document.getElementById('nextButton').style.display = 'none';
         document.getElementById('submitButton').style.display = 'inline-block';
+        document.getElementById('recaptcha').style.display = 'inline-block';
     } else {
         document.getElementById('nextButton').style.display = 'inline-block';
         document.getElementById('submitButton').style.display = 'none';
+        document.getElementById('recaptcha').style.display = 'none';
     }
 }
 
 function showPrevGroup() {
+    saveFormData()
     if (currentGroupIndex > 0) {
         currentGroupIndex--;
         showGroup(currentGroupIndex);
@@ -331,8 +335,63 @@ function showPrevGroup() {
 }
 
 function showNextGroup() {
-    if (currentGroupIndex < groups.length - 1) {
-        currentGroupIndex++;
-        showGroup(currentGroupIndex);
+    saveFormData()
+    const currentGroup = document.querySelector('.group:not([style*="none"])');
+    const textInputFields = currentGroup.querySelectorAll('input[type="text"]');
+    let allFieldsFilled = true;
+
+    textInputFields.forEach(field => {
+        if (field.value.trim() === '') {
+            allFieldsFilled = false;
+            field.style.border = '1px solid #FFA500'; // Orange border
+        } else {
+            field.style.border = ''; // Remove any existing border
+        }
+    });
+
+    if (allFieldsFilled) {
+        if (currentGroupIndex < groups.length - 1) {
+            currentGroupIndex++;
+            showGroup(currentGroupIndex);
+        }
     }
+}
+
+
+var loadFormDataTrigger = new Event('loadFormDataTrigger');
+
+// Call loadFormData when the DOM content is loaded
+document.addEventListener('loadFormDataTrigger', loadFormData);
+
+// Add this function to save form data to localStorage
+function saveFormData() {
+    console.log('Saving form data...');
+    const formData = {};
+    const inputFields = document.querySelectorAll('input');
+    inputFields.forEach(field => {
+        formData[field.name] = field.value;
+    });
+    localStorage.setItem('form_data', JSON.stringify(formData));
+}
+
+// Add this function to load form data from localStorage
+function loadFormData() {
+    console.log('Loading previous input...');
+    const formData = JSON.parse(localStorage.getItem('form_data'));
+    if (formData) {
+        const inputFields = document.querySelectorAll('input');
+        console.log(inputFields);
+        inputFields.forEach(field => {
+            if (formData.hasOwnProperty(field.name)) {
+                field.value = formData[field.name];
+            }
+        });
+    }
+    console.log('All previous input loaded.');
+}
+
+function updatePouleWinnerPlaceholder() {
+    const winnerInputField = document.getElementsByClassName('winner-question')[0];
+    const username = document.getElementById('username').value || document.getElementById('username').placeholder;
+    winnerInputField.placeholder = username;
 }
