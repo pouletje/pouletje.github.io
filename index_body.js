@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <label for="username">Naam: </label>
                 <input id="username" type="text" placeholder="Ronald Koeman" name="username">
             `
-            
+
             startDiv.appendChild(startTitle);
             startDiv.appendChild(nameInputFieldSpan);
             groupList.appendChild(startDiv);
@@ -49,6 +49,22 @@ document.addEventListener("DOMContentLoaded", function() {
                         <input type="number" id="${match.id}-away" name="${match.id}-away" class="away-score" min="0" value="0" required>
                         <label for="${match.id}-away" class="away-team">${match.awayTeam}</label>
                     `;
+                    const homeInput = matchLi.querySelector('.home-score');
+                    const awayInput = matchLi.querySelector('.away-score');
+
+                    // Clear default value when input field is clicked
+                    homeInput.addEventListener('click', () => {
+                        if (homeInput.value === '0') {
+                            homeInput.value = '';
+                        }
+                    });
+
+                    awayInput.addEventListener('click', () => {
+                        if (awayInput.value === '0') {
+                            awayInput.value = '';
+                        }
+                    });
+
                     groupMatchlist.appendChild(matchLi);
                 });
                 const groupWarning = document.createElement('p');

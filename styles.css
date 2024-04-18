@@ -201,6 +201,11 @@ td.country {
     width: 100%; /* Ensures the table takes full width of its container */
 }
 
+.group-standings tbody tr:nth-child(1),
+.group-standings tbody tr:nth-child(2) {
+    background-color: #04AA6D;
+}
+
 .ko-input-field {
     text-align: center;
     background-color: #333;

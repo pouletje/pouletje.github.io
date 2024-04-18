@@ -1,5 +1,6 @@
 
-function autoFillKOR16() {
+function autoFillKOR16(event) {
+    event.preventDefault();
     function generateAutoFilledKOR16(ranks) {
         function createInputField(ph, field_name) {
             const field = document.createElement('input');
@@ -86,7 +87,7 @@ function updateKnockoutsPage() {
         const r16_title = createRoundTitle('Laatste 16', '5');
         r16_div.appendChild(r16_title);
         const autoFillButton = document.createElement('button');
-        autoFillButton.setAttribute('onclick','autoFillKOR16()');
+        autoFillButton.setAttribute('onclick','autoFillKOR16(event)');
         autoFillButton.innerText = 'Auto-fill';
         autoFillButton.id = "KOR16-autofill"
         r16_title.appendChild(autoFillButton);
@@ -318,11 +319,9 @@ function showGroup(groupIndex) {
     if (groupIndex === groupDivs.length - 1) {
         document.getElementById('nextButton').style.display = 'none';
         document.getElementById('submitButton').style.display = 'inline-block';
-        document.getElementById('recaptcha').style.display = 'inline-block';
     } else {
         document.getElementById('nextButton').style.display = 'inline-block';
         document.getElementById('submitButton').style.display = 'none';
-        document.getElementById('recaptcha').style.display = 'none';
     }
 }
 
@@ -337,13 +336,17 @@ function showPrevGroup() {
 function showNextGroup() {
     saveFormData()
     const currentGroup = document.querySelector('.group:not([style*="none"])');
-    const textInputFields = currentGroup.querySelectorAll('input[type="text"]');
+    const textInputFields = currentGroup.querySelectorAll('input');
     let allFieldsFilled = true;
 
     textInputFields.forEach(field => {
         if (field.value.trim() === '') {
             allFieldsFilled = false;
-            field.style.border = '1px solid #FFA500'; // Orange border
+            if (field.type == 'text') {
+                field.style.border = '1px solid #FFA500'; // Orange border
+            } else {
+                field.style.border = '1px solid #FF0000'; // Red border
+            }
         } else {
             field.style.border = ''; // Remove any existing border
         }
