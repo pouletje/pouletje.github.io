@@ -48,7 +48,7 @@ function autoFillKOR16(event) {
 }
 
 function confirmSubmit(e) {
-    if (!confirm('Zeker weten?')) {
+    if (!confirm('Zeker weten?\nJe kan het niet meer aanpassen.\n\nWacht tot je inzending is verwerkt en je "Success" ziet, dit kan ongeveer 5-25 sec duren.')) {
         e.preventDefault();
     }
 }
@@ -104,7 +104,7 @@ function updateKnockoutsPage() {
         f_div.appendChild(createRoundTitle('Finale', '18'));
         const f_grid = createGrid(2);
         const w_div = document.createElement('div');
-        w_div.appendChild(createRoundTitle('Winnaar', '20'));
+        w_div.appendChild(createRoundTitle('Winnaar', '22'));
         const w_grid = createGrid(1);
         for (let i = 0; i < 16; i++) {
             const r16_country = createInputField("Land", "r16-" + i);

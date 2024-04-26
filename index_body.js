@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const questionLi = document.createElement('li');
                         questionLi.classList.add('question');
                         questionLi.innerHTML = `
-                            <label for="question-${question.id}">${question.question}</label>
+                            <label for="question-${question.id}">${question.question} <span class="points">${question.points}pt</span></label>
                             <input type="text" id="question-${question.id}" placeholder="${question.placeholder}" name="question-${question.id}" required>
                             <br>
                             <span class="note">-${question.decrease}pt voor iedere ${question.deviation} meer of minder</span>
