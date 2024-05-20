@@ -82,7 +82,7 @@
             {
                 "rule": "Player of the Day",
                 "explanation": "Iedere dagwinnaar krijgt 1 extra punt.",
-                "exception": "Bij meerdere dagwinnaars krijgen zij allemaal een extra punt."
+                "exception": "Alleen tijdens groepsfase. Bonuspunten tellen niet mee in dagranking. Bij meerdere dagwinnaars krijgen zij allemaal een extra punt."
             },
             {
                 "rule": "King of the Draws",
