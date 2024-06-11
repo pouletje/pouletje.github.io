@@ -122,8 +122,8 @@ input[type="text"]::placeholder {
         max-width: 80vw;
     }
 
-    div.dashboards {
-        flex-direction: column;
+    iframe {
+        max-width: 100vw;
     }
 }
 
