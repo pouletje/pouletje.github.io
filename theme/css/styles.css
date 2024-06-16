@@ -1,4 +1,9 @@
 /* MAIN */
+:root {
+    --navbar-background: #FF7F00;
+    --navbar-background-hover: #F4F4F4;
+    --navbar-hover-text: #202124;
+}
 
 /* THEME GLOBAL */
 body {
@@ -161,7 +166,7 @@ input[type="text"]::placeholder {
 /* Navbar container */
 #navbar {
     overflow: hidden;
-    background-color: #2A3036;
+    background-color: var(--navbar-background);
     font-family: Arial;
 }
 
@@ -195,15 +200,16 @@ input[type="text"]::placeholder {
 }
 
 /* Add a red background color to navbar links on hover */
-#navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #F73934;
+#navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
+    background-color: var(--navbar-background-hover);
+    color: var(--navbar-hover-text);
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2A3036;
+    background-color: var(--navbar-background);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -217,12 +223,6 @@ input[type="text"]::placeholder {
     text-decoration: none;
     display: block;
     text-align: left;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #F73934;
-    color: #f4f4f4;
 }
 
 /* Show the dropdown menu on hover */
