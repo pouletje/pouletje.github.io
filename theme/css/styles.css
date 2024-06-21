@@ -1,12 +1,12 @@
 /* MAIN */
 :root {
-    --navbar-background: #2A3036;
+    /* --navbar-background: #2A3036;
     --navbar-background-hover: #F73934;
-    --navbar-hover-text: #F4F4F4;
+    --navbar-hover-text: #F4F4F4; */
 
-    /* --navbar-background: #FF7F00;
+    --navbar-background: #FF7F00;
     --navbar-background-hover: #F4F4F4;
-    --navbar-hover-text: #202124; */
+    --navbar-hover-text: #202124;
 }
 
 /* THEME GLOBAL */
