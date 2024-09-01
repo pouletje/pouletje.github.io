@@ -201,9 +201,12 @@ td.country {
     width: 100%; /* Ensures the table takes full width of its container */
 }
 
-.group-standings tbody tr:nth-child(1),
-.group-standings tbody tr:nth-child(2) {
-    background-color: #04AA6D;
+.group-standings tbody tr:nth-child(-n+8) {
+    background-color: #03784d;
+}
+
+.group-standings tbody tr:nth-child(n+9):nth-child(-n+24) {
+    background-color: #334949;
 }
 
 .ko-input-field {

@@ -1,0 +1,756 @@
+{
+    "matches": {
+        "Tuesday, Sept. 17": [
+            {
+                "id": 1,
+                "homeTeam": "Young Boys",
+                "awayTeam": "Aston Villa"
+            },
+            {
+                "id": 2,
+                "homeTeam": "Juventus",
+                "awayTeam": "PSV Eindhoven"
+            },
+            {
+                "id": 3,
+                "homeTeam": "AC Milan",
+                "awayTeam": "Liverpool"
+            },
+            {
+                "id": 4,
+                "homeTeam": "Bayern Munich",
+                "awayTeam": "Dinamo Zagreb"
+            },
+            {
+                "id": 5,
+                "homeTeam": "Real Madrid",
+                "awayTeam": "Stuttgart"
+            },
+            {
+                "id": 6,
+                "homeTeam": "Sporting CP",
+                "awayTeam": "Lille"
+            }
+        ],
+        "Wednesday, Sept. 18": [
+            {
+                "id": 7,
+                "homeTeam": "Sparta Prague",
+                "awayTeam": "Salzburg"
+            },
+            {
+                "id": 8,
+                "homeTeam": "Bologna",
+                "awayTeam": "Shakhtar Donetsk"
+            },
+            {
+                "id": 9,
+                "homeTeam": "Celtic",
+                "awayTeam": "Slovan Bratislava"
+            },
+            {
+                "id": 10,
+                "homeTeam": "Club Brugge",
+                "awayTeam": "Borussia Dortmund"
+            },
+            {
+                "id": 11,
+                "homeTeam": "Manchester City",
+                "awayTeam": "Internazionale"
+            },
+            {
+                "id": 12,
+                "homeTeam": "Paris Saint-Germain",
+                "awayTeam": "Girona"
+            }
+        ],
+        "Thursday, Sept. 19": [
+            {
+                "id": 13,
+                "homeTeam": "Feyenoord",
+                "awayTeam": "Bayer Leverkusen"
+            },
+            {
+                "id": 14,
+                "homeTeam": "Red Star Belgrade",
+                "awayTeam": "Benfica"
+            },
+            {
+                "id": 15,
+                "homeTeam": "Monaco",
+                "awayTeam": "Barcelona"
+            },
+            {
+                "id": 16,
+                "homeTeam": "Atalanta",
+                "awayTeam": "Arsenal"
+            },
+            {
+                "id": 17,
+                "homeTeam": "Atlético Madrid",
+                "awayTeam": "RB Leipzig"
+            },
+            {
+                "id": 18,
+                "homeTeam": "Brest",
+                "awayTeam": "Sturm Graz"
+            }
+        ],
+        "Tuesday, Oct. 1": [
+            {
+                "id": 19,
+                "homeTeam": "Salzburg",
+                "awayTeam": "Brest"
+            },
+            {
+                "id": 20,
+                "homeTeam": "Stuttgart",
+                "awayTeam": "Sparta Prague"
+            },
+            {
+                "id": 21,
+                "homeTeam": "Arsenal",
+                "awayTeam": "Paris Saint-Germain"
+            },
+            {
+                "id": 22,
+                "homeTeam": "Bayer Leverkusen",
+                "awayTeam": "AC Milan"
+            },
+            {
+                "id": 23,
+                "homeTeam": "Borussia Dortmund",
+                "awayTeam": "Celtic"
+            },
+            {
+                "id": 24,
+                "homeTeam": "Barcelona",
+                "awayTeam": "Young Boys"
+            },
+            {
+                "id": 25,
+                "homeTeam": "Internazionale",
+                "awayTeam": "Red Star Belgrade"
+            },
+            {
+                "id": 26,
+                "homeTeam": "PSV Eindhoven",
+                "awayTeam": "Sporting CP"
+            },
+            {
+                "id": 27,
+                "homeTeam": "Slovan Bratislava",
+                "awayTeam": "Manchester City"
+            }
+        ],
+        "Wednesday, Oct. 2": [
+            {
+                "id": 28,
+                "homeTeam": "Shakhtar Donetsk",
+                "awayTeam": "Atalanta"
+            },
+            {
+                "id": 29,
+                "homeTeam": "Girona",
+                "awayTeam": "Feyenoord"
+            },
+            {
+                "id": 30,
+                "homeTeam": "Aston Villa",
+                "awayTeam": "Bayern Munich"
+            },
+            {
+                "id": 31,
+                "homeTeam": "Dinamo Zagreb",
+                "awayTeam": "Monaco"
+            },
+            {
+                "id": 32,
+                "homeTeam": "Liverpool",
+                "awayTeam": "Bologna"
+            },
+            {
+                "id": 33,
+                "homeTeam": "Lille",
+                "awayTeam": "Real Madrid"
+            },
+            {
+                "id": 34,
+                "homeTeam": "RB Leipzig",
+                "awayTeam": "Juventus"
+            },
+            {
+                "id": 35,
+                "homeTeam": "Sturm Graz",
+                "awayTeam": "Club Brugge"
+            },
+            {
+                "id": 36,
+                "homeTeam": "Benfica",
+                "awayTeam": "Atlético Madrid"
+            }
+        ],
+        "Tuesday, Oct. 22": [
+            {
+                "id": 37,
+                "homeTeam": "AC Milan",
+                "awayTeam": "Club Brugge"
+            },
+            {
+                "id": 38,
+                "homeTeam": "Monaco",
+                "awayTeam": "Red Star Belgrade"
+            },
+            {
+                "id": 39,
+                "homeTeam": "Arsenal",
+                "awayTeam": "Shakhtar Donetsk"
+            },
+            {
+                "id": 40,
+                "homeTeam": "Aston Villa",
+                "awayTeam": "Bologna"
+            },
+            {
+                "id": 41,
+                "homeTeam": "Girona",
+                "awayTeam": "Slovan Bratislava"
+            },
+            {
+                "id": 42,
+                "homeTeam": "Juventus",
+                "awayTeam": "Stuttgart"
+            },
+            {
+                "id": 43,
+                "homeTeam": "Paris Saint-Germain",
+                "awayTeam": "PSV Eindhoven"
+            },
+            {
+                "id": 44,
+                "homeTeam": "Real Madrid",
+                "awayTeam": "Borussia Dortmund"
+            },
+            {
+                "id": 45,
+                "homeTeam": "Sturm Graz",
+                "awayTeam": "Sporting CP"
+            }
+        ],
+        "Wednesday, Oct. 23": [
+            {
+                "id": 46,
+                "homeTeam": "Atalanta",
+                "awayTeam": "Celtic"
+            },
+            {
+                "id": 47,
+                "homeTeam": "Brest",
+                "awayTeam": "Bayer Leverkusen"
+            },
+            {
+                "id": 48,
+                "homeTeam": "Atlético Madrid",
+                "awayTeam": "Lille"
+            },
+            {
+                "id": 49,
+                "homeTeam": "Young Boys",
+                "awayTeam": "Internazionale"
+            },
+            {
+                "id": 50,
+                "homeTeam": "Barcelona",
+                "awayTeam": "Bayern Munich"
+            },
+            {
+                "id": 51,
+                "homeTeam": "Salzburg",
+                "awayTeam": "Dinamo Zagreb"
+            },
+            {
+                "id": 52,
+                "homeTeam": "Manchester City",
+                "awayTeam": "Sparta Prague"
+            },
+            {
+                "id": 53,
+                "homeTeam": "RB Leipzig",
+                "awayTeam": "Liverpool"
+            },
+            {
+                "id": 54,
+                "homeTeam": "Benfica",
+                "awayTeam": "Feyenoord"
+            }
+        ],
+        "Tuesday, Nov. 5": [
+            {
+                "id": 55,
+                "homeTeam": "PSV Eindhoven",
+                "awayTeam": "Girona"
+            },
+            {
+                "id": 56,
+                "homeTeam": "Slovan Bratislava",
+                "awayTeam": "Dinamo Zagreb"
+            },
+            {
+                "id": 57,
+                "homeTeam": "Bologna",
+                "awayTeam": "Monaco"
+            },
+            {
+                "id": 58,
+                "homeTeam": "Borussia Dortmund",
+                "awayTeam": "Sturm Graz"
+            },
+            {
+                "id": 59,
+                "homeTeam": "Celtic",
+                "awayTeam": "RB Leipzig"
+            },
+            {
+                "id": 60,
+                "homeTeam": "Liverpool",
+                "awayTeam": "Bayer Leverkusen"
+            },
+            {
+                "id": 61,
+                "homeTeam": "Lille",
+                "awayTeam": "Juventus"
+            },
+            {
+                "id": 62,
+                "homeTeam": "Real Madrid",
+                "awayTeam": "AC Milan"
+            },
+            {
+                "id": 63,
+                "homeTeam": "Sporting CP",
+                "awayTeam": "Manchester City"
+            }
+        ],
+        "Wednesday, Nov. 6": [
+            {
+                "id": 64,
+                "homeTeam": "Club Brugge",
+                "awayTeam": "Aston Villa"
+            },
+            {
+                "id": 65,
+                "homeTeam": "Shakhtar Donetsk",
+                "awayTeam": "Young Boys"
+            },
+            {
+                "id": 66,
+                "homeTeam": "Sparta Prague",
+                "awayTeam": "Brest"
+            },
+            {
+                "id": 67,
+                "homeTeam": "Bayern Munich",
+                "awayTeam": "Benfica"
+            },
+            {
+                "id": 68,
+                "homeTeam": "Internazionale",
+                "awayTeam": "Arsenal"
+            },
+            {
+                "id": 69,
+                "homeTeam": "Feyenoord",
+                "awayTeam": "Salzburg"
+            },
+            {
+                "id": 70,
+                "homeTeam": "Red Star Belgrade",
+                "awayTeam": "Barcelona"
+            },
+            {
+                "id": 71,
+                "homeTeam": "Paris Saint-Germain",
+                "awayTeam": "Atlético Madrid"
+            },
+            {
+                "id": 72,
+                "homeTeam": "Stuttgart",
+                "awayTeam": "Atalanta"
+            }
+        ],
+        "Tuesday, Nov. 26": [
+            {
+                "id": 73,
+                "homeTeam": "Sparta Prague",
+                "awayTeam": "Atlético Madrid"
+            },
+            {
+                "id": 74,
+                "homeTeam": "Slovan Bratislava",
+                "awayTeam": "AC Milan"
+            },
+            {
+                "id": 75,
+                "homeTeam": "Bayer Leverkusen",
+                "awayTeam": "Salzburg"
+            },
+            {
+                "id": 76,
+                "homeTeam": "Young Boys",
+                "awayTeam": "Atalanta"
+            },
+            {
+                "id": 77,
+                "homeTeam": "Barcelona",
+                "awayTeam": "Brest"
+            },
+            {
+                "id": 78,
+                "homeTeam": "Bayern Munich",
+                "awayTeam": "Paris Saint-Germain"
+            },
+            {
+                "id": 79,
+                "homeTeam": "Internazionale",
+                "awayTeam": "RB Leipzig"
+            },
+            {
+                "id": 80,
+                "homeTeam": "Manchester City",
+                "awayTeam": "Feyenoord"
+            },
+            {
+                "id": 81,
+                "homeTeam": "Sporting CP",
+                "awayTeam": "Arsenal"
+            }
+        ],
+        "Wednesday, Nov. 27": [
+            {
+                "id": 82,
+                "homeTeam": "Red Star Belgrade",
+                "awayTeam": "Stuttgart"
+            },
+            {
+                "id": 83,
+                "homeTeam": "Sturm Graz",
+                "awayTeam": "Girona"
+            },
+            {
+                "id": 84,
+                "homeTeam": "Monaco",
+                "awayTeam": "Benfica"
+            },
+            {
+                "id": 85,
+                "homeTeam": "Aston Villa",
+                "awayTeam": "Juventus"
+            },
+            {
+                "id": 86,
+                "homeTeam": "Bologna",
+                "awayTeam": "Lille"
+            },
+            {
+                "id": 87,
+                "homeTeam": "Celtic",
+                "awayTeam": "Club Brugge"
+            },
+            {
+                "id": 88,
+                "homeTeam": "Dinamo Zagreb",
+                "awayTeam": "Borussia Dortmund"
+            },
+            {
+                "id": 89,
+                "homeTeam": "Liverpool",
+                "awayTeam": "Real Madrid"
+            },
+            {
+                "id": 90,
+                "homeTeam": "PSV Eindhoven",
+                "awayTeam": "Shakhtar Donetsk"
+            }
+        ],
+        "Tuesday, Dec. 10": [
+            {
+                "id": 91,
+                "homeTeam": "Girona",
+                "awayTeam": "Liverpool"
+            },
+            {
+                "id": 92,
+                "homeTeam": "Dinamo Zagreb",
+                "awayTeam": "Celtic"
+            },
+            {
+                "id": 93,
+                "homeTeam": "Atalanta",
+                "awayTeam": "Real Madrid"
+            },
+            {
+                "id": 94,
+                "homeTeam": "Bayer Leverkusen",
+                "awayTeam": "Internazionale"
+            },
+            {
+                "id": 95,
+                "homeTeam": "Club Brugge",
+                "awayTeam": "Sporting CP"
+            },
+            {
+                "id": 96,
+                "homeTeam": "Salzburg",
+                "awayTeam": "Paris Saint-Germain"
+            },
+            {
+                "id": 97,
+                "homeTeam": "Shakhtar Donetsk",
+                "awayTeam": "Bayern Munich"
+            },
+            {
+                "id": 98,
+                "homeTeam": "RB Leipzig",
+                "awayTeam": "Aston Villa"
+            },
+            {
+                "id": 99,
+                "homeTeam": "Brest",
+                "awayTeam": "PSV Eindhoven"
+            }
+        ],
+        "Wednesday, Dec. 11": [
+            {
+                "id": 100,
+                "homeTeam": "Atlético Madrid",
+                "awayTeam": "Slovan Bratislava"
+            },
+            {
+                "id": 101,
+                "homeTeam": "Lille",
+                "awayTeam": "Sturm Graz"
+            },
+            {
+                "id": 102,
+                "homeTeam": "AC Milan",
+                "awayTeam": "Red Star Belgrade"
+            },
+            {
+                "id": 103,
+                "homeTeam": "Arsenal",
+                "awayTeam": "Monaco"
+            },
+            {
+                "id": 104,
+                "homeTeam": "Borussia Dortmund",
+                "awayTeam": "Barcelona"
+            },
+            {
+                "id": 105,
+                "homeTeam": "Feyenoord",
+                "awayTeam": "Sparta Prague"
+            },
+            {
+                "id": 106,
+                "homeTeam": "Juventus",
+                "awayTeam": "Manchester City"
+            },
+            {
+                "id": 107,
+                "homeTeam": "Benfica",
+                "awayTeam": "Bologna"
+            },
+            {
+                "id": 108,
+                "homeTeam": "Stuttgart",
+                "awayTeam": "Young Boys"
+            }
+        ],
+        "Tuesday, Jan. 21": [
+            {
+                "id": 109,
+                "homeTeam": "Monaco",
+                "awayTeam": "Aston Villa"
+            },
+            {
+                "id": 110,
+                "homeTeam": "Atalanta",
+                "awayTeam": "Sturm Graz"
+            },
+            {
+                "id": 111,
+                "homeTeam": "Atlético Madrid",
+                "awayTeam": "Bayer Leverkusen"
+            },
+            {
+                "id": 112,
+                "homeTeam": "Bologna",
+                "awayTeam": "Borussia Dortmund"
+            },
+            {
+                "id": 113,
+                "homeTeam": "Club Brugge",
+                "awayTeam": "Juventus"
+            },
+            {
+                "id": 114,
+                "homeTeam": "Red Star Belgrade",
+                "awayTeam": "PSV Eindhoven"
+            },
+            {
+                "id": 115,
+                "homeTeam": "Liverpool",
+                "awayTeam": "Lille"
+            },
+            {
+                "id": 116,
+                "homeTeam": "Slovan Bratislava",
+                "awayTeam": "Stuttgart"
+            },
+            {
+                "id": 117,
+                "homeTeam": "Benfica",
+                "awayTeam": "Barcelona"
+            }
+        ],
+        "Wednesday, Jan. 22": [
+            {
+                "id": 118,
+                "homeTeam": "Shakhtar Donetsk",
+                "awayTeam": "Brest"
+            },
+            {
+                "id": 119,
+                "homeTeam": "RB Leipzig",
+                "awayTeam": "Sporting CP"
+            },
+            {
+                "id": 120,
+                "homeTeam": "AC Milan",
+                "awayTeam": "Girona"
+            },
+            {
+                "id": 121,
+                "homeTeam": "Sparta Prague",
+                "awayTeam": "Internazionale"
+            },
+            {
+                "id": 122,
+                "homeTeam": "Arsenal",
+                "awayTeam": "Dinamo Zagreb"
+            },
+            {
+                "id": 123,
+                "homeTeam": "Celtic",
+                "awayTeam": "Young Boys"
+            },
+            {
+                "id": 124,
+                "homeTeam": "Feyenoord",
+                "awayTeam": "Bayern Munich"
+            },
+            {
+                "id": 125,
+                "homeTeam": "Paris Saint-Germain",
+                "awayTeam": "Manchester City"
+            },
+            {
+                "id": 126,
+                "homeTeam": "Real Madrid",
+                "awayTeam": "Salzburg"
+            }
+        ],
+        "Wednesday, Jan. 29": [
+            {
+                "id": 127,
+                "homeTeam": "Aston Villa",
+                "awayTeam": "Celtic"
+            },
+            {
+                "id": 128,
+                "homeTeam": "Bayer Leverkusen",
+                "awayTeam": "Sparta Prague"
+            },
+            {
+                "id": 129,
+                "homeTeam": "Borussia Dortmund",
+                "awayTeam": "Shakhtar Donetsk"
+            },
+            {
+                "id": 130,
+                "homeTeam": "Young Boys",
+                "awayTeam": "Red Star Belgrade"
+            },
+            {
+                "id": 131,
+                "homeTeam": "Barcelona",
+                "awayTeam": "Atalanta"
+            },
+            {
+                "id": 132,
+                "homeTeam": "Bayern Munich",
+                "awayTeam": "Slovan Bratislava"
+            },
+            {
+                "id": 133,
+                "homeTeam": "Internazionale",
+                "awayTeam": "Monaco"
+            },
+            {
+                "id": 134,
+                "homeTeam": "Salzburg",
+                "awayTeam": "Atlético Madrid"
+            },
+            {
+                "id": 135,
+                "homeTeam": "Girona",
+                "awayTeam": "Arsenal"
+            },
+            {
+                "id": 136,
+                "homeTeam": "Dinamo Zagreb",
+                "awayTeam": "AC Milan"
+            },
+            {
+                "id": 137,
+                "homeTeam": "Juventus",
+                "awayTeam": "Benfica"
+            },
+            {
+                "id": 138,
+                "homeTeam": "Lille",
+                "awayTeam": "Feyenoord"
+            },
+            {
+                "id": 139,
+                "homeTeam": "Manchester City",
+                "awayTeam": "Club Brugge"
+            },
+            {
+                "id": 140,
+                "homeTeam": "PSV Eindhoven",
+                "awayTeam": "Liverpool"
+            },
+            {
+                "id": 141,
+                "homeTeam": "Sturm Graz",
+                "awayTeam": "RB Leipzig"
+            },
+            {
+                "id": 142,
+                "homeTeam": "Sporting CP",
+                "awayTeam": "Bologna"
+            },
+            {
+                "id": 143,
+                "homeTeam": "Brest",
+                "awayTeam": "Real Madrid"
+            },
+            {
+                "id": 144,
+                "homeTeam": "Stuttgart",
+                "awayTeam": "Paris Saint-Germain"
+            }
+        ]
+    }
+}

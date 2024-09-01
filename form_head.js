@@ -29,33 +29,56 @@ function createGrid(width) {
 function autoFillKOR16(event) {
     event.preventDefault();
 
-    function generateAutoFilledKOR16(ranks) {
+    function generateAutoFilledPlayoff(ranks) {
         const grid_temp = document.createElement('div');
-        let i = 0;
+        let i = 0
 
         ranks.forEach(group_rank => {
-            const r16_inputfield_1 = createInputField("Land", "r16-" + i);
-            r16_inputfield_1.setAttribute('value', group_rank[0].country);
-            i++;
-            const r16_inputfield_2 = createInputField("Land", "r16-" + i);
-            r16_inputfield_2.setAttribute('value', group_rank[1].country);
-            i++;
-            grid_temp.appendChild(r16_inputfield_1);
-            grid_temp.appendChild(r16_inputfield_2);
-        });
+            let i = 0
+            group_rank.forEach(team => {
+                if (i > 7 && i < 24) {
+                    const playoff_inputfield = createInputField("Land", "playoff-" + Number(i + 1));
+                    playoff_inputfield.setAttribute('value', team.country);
+                    grid_temp.appendChild(playoff_inputfield);
+                }
+                i++;
+            })
+        })
 
-        for (i = 12; i < 16; i++) {
-            const r16_wildcard = createInputField("Land", "r16-" + i);
-            grid_temp.appendChild(r16_wildcard);
-        }
+        return grid_temp.innerHTML;
+    }
+
+    function generateAutoFilledKOR16(ranks) {
+        const grid_temp = document.createElement('div');
+        let i = 0
+
+        ranks.forEach(group_rank => {
+            let i = 0
+            group_rank.forEach(team => {
+                if (i < 8) {
+                    const r16_inputfield = createInputField("Land", "r16-" + i);
+                    r16_inputfield.setAttribute('value', team.country);
+                    grid_temp.appendChild(r16_inputfield);
+                }
+                i++;
+            })
+            
+            for (i = 8; i < 16; i++) {
+                const open_field = createInputField("Land", "r16-" + i);
+                grid_temp.appendChild(open_field)
+            }
+        })
 
         return grid_temp.innerHTML;
     }
 
     const current_rankings = makeRankings();
+    const playoff_fields = generateAutoFilledPlayoff(current_rankings);
+    const playoff_grid = document.getElementById('playoff-grid');
+    playoff_grid.innerHTML = playoff_fields;
     const r16_fields = generateAutoFilledKOR16(current_rankings);
-    const grid = document.getElementById('ko-r16-grid');
-    grid.innerHTML = r16_fields;
+    const r16_grid = document.getElementById('ko-r16-grid');
+    r16_grid.innerHTML = r16_fields;
 
     const autofillbtn = document.getElementById('KOR16-autofill');
     autofillbtn.innerText = 'Ververs';
@@ -75,13 +98,28 @@ function updateKnockoutsPage() {
         const inputDiv = document.createElement('div');
         inputDiv.id = 'ko-input';
 
-        // Round 16
-        const r16_div = document.createElement('div');
-        const r16_title = createRoundTitle('Laatste 16', '5');
+        // KO play-off
+        const playoff_div = document.createElement('div');
+        const playoff_title = createRoundTitle('KO Playoff (9-24)', '8');
         const autoFillButton = document.createElement('button');
         autoFillButton.setAttribute('onclick', 'autoFillKOR16(event)');
         autoFillButton.innerText = 'Auto-fill';
         autoFillButton.id = "KOR16-autofill"
+        playoff_title.appendChild(autoFillButton);
+        playoff_div.appendChild(playoff_title);
+        const playoff_grid = createGrid(4);
+        playoff_grid.id = 'playoff-grid';
+        for (let i = 9; i < 25; i++) {
+            const playoff_country = createInputField("Land", "playoff-" + i);
+            playoff_grid.appendChild(playoff_country);
+        }
+        playoff_div.appendChild(playoff_grid);
+        inputDiv.appendChild(playoff_div);
+
+
+        // Round 16
+        const r16_div = document.createElement('div');
+        const r16_title = createRoundTitle('Laatste 16', '16');
         r16_title.appendChild(autoFillButton);
         r16_div.appendChild(r16_title);
         const r16_grid = createGrid(4);
@@ -95,7 +133,7 @@ function updateKnockoutsPage() {
 
         // Quarterfinals
         const qf_div = document.createElement('div');
-        qf_div.appendChild(createRoundTitle('Kwartfinale', '10'));
+        qf_div.appendChild(createRoundTitle('Kwartfinale', '32'));
         const qf_grid = createGrid(4);
         for (let i = 0; i < 8; i++) {
             const qf_country = createInputField("Kwartfinalist", "qf-" + i);
@@ -106,7 +144,7 @@ function updateKnockoutsPage() {
 
         // Semifinals
         const sf_div = document.createElement('div');
-        sf_div.appendChild(createRoundTitle('Halve finale', '14'));
+        sf_div.appendChild(createRoundTitle('Halve finale', '48'));
         const sf_grid = createGrid(4);
         for (let i = 0; i < 4; i++) {
             const sf_country = createInputField("Halve finalist", "sf-" + i);
@@ -117,7 +155,7 @@ function updateKnockoutsPage() {
 
         // Finals
         const f_div = document.createElement('div');
-        f_div.appendChild(createRoundTitle('Finale', '18'));
+        f_div.appendChild(createRoundTitle('Finale', '60'));
         const f_grid = createGrid(2);
         for (let i = 0; i < 2; i++) {
             const f_country = createInputField("Finalist", "f-" + i, "98%");
@@ -128,7 +166,7 @@ function updateKnockoutsPage() {
 
         // Winner
         const w_div = document.createElement('div');
-        w_div.appendChild(createRoundTitle('Winnaar', '22'));
+        w_div.appendChild(createRoundTitle('Winnaar', '72'));
         const w_grid = createGrid(1);
         const w_field = createInputField("Winnaar", "w-0", "100%");
         w_grid.appendChild(w_field);
@@ -151,6 +189,7 @@ function updateKnockoutsPage() {
     standingsDiv.classList.add('standings');
 
     const rankings = makeRankings();
+    console.log(rankings);
     rankings.forEach(grp => {
         const tableWrapper = document.createElement('div');
         tableWrapper.classList.add('table-wrapper');
@@ -192,29 +231,27 @@ function updateKnockoutsPage() {
 
 // Rankings generation functions
 function makeRankings() {
-    function getGroupsPredictions() {
+    function getPredictions() {
         const predictions = [];
         const groupElements = document.querySelectorAll('.group ul');
         Array.from(groupElements).forEach(groupMatchlist => {
             if (groupMatchlist.classList.contains('group-matchlist')) {
-                const group_predictions = [];
                 Array.from(groupMatchlist.children).forEach(match => {
                     const homet = match.querySelector('.home-team').innerText;
                     const awayt = match.querySelector('.away-team').innerText;
                     const homes = match.querySelector('.home-score').value;
                     const aways = match.querySelector('.away-score').value;
-                    const prediction = {};
+                    const prediction = {}
                     prediction[homet] = Number(homes) || 0;
                     prediction[awayt] = Number(aways) || 0;
-                    group_predictions.push(prediction);
+                    predictions.push(prediction);
                 });
-                predictions.push(group_predictions);
             }
         });
         return predictions;
     }
 
-    function rankGroups(predictions) {
+    function rankGroup(predictions) {
         function sortGroup(group_to_sort) {
             const dataArray = Object.entries(group_to_sort).map(([country, stats]) => ({
                 country,
@@ -241,45 +278,45 @@ function makeRankings() {
             }));
         }
 
-        const allGroups = [];
-        predictions.forEach(grp => {
-            const grpPreds = {};
-            grp.forEach(match => {
-                Object.keys(match).forEach(country => {
-                    if (!grpPreds.hasOwnProperty(country)) {
-                        grpPreds[country] = { "points": 0, "goals_for": 0, "goals_con": 0 };
-                    }
-                });
-
-                const maxGoals = Math.max(...Object.values(match));
-                const minGoals = Math.min(...Object.values(match));
-
-                if (maxGoals == minGoals) {
-                    Object.keys(match).forEach(country => {
-                        grpPreds[country].points += 1;
-                        grpPreds[country].goals_for += maxGoals;
-                        grpPreds[country].goals_con += maxGoals;
-                    });
-                } else {
-                    Object.entries(match).forEach(([country, goals]) => {
-                        if (goals == maxGoals) {
-                            grpPreds[country].points += 3;
-                            grpPreds[country].goals_for += maxGoals;
-                            grpPreds[country].goals_con += minGoals;
-                        } else {
-                            grpPreds[country].goals_for += minGoals;
-                            grpPreds[country].goals_con += maxGoals;
-                        }
-                    });
+        const grpPreds = {};
+        predictions.forEach(match => {
+            Object.keys(match).forEach(team => {
+                if (!grpPreds.hasOwnProperty(team)) {
+                    grpPreds[team] = { "points": 0, "goals_for": 0, "goals_con": 0 };
                 }
             });
-            allGroups.push(sortGroup(grpPreds));
+
+            const maxGoals = Math.max(...Object.values(match));
+            const minGoals = Math.min(...Object.values(match));
+
+            if (maxGoals == minGoals) {
+                Object.keys(match).forEach(team => {
+                    grpPreds[team].points += 1;
+                    grpPreds[team].goals_for += maxGoals;
+                    grpPreds[team].goals_con += maxGoals;
+                });
+            } else {
+                Object.entries(match).forEach(([team, goals]) => {
+                    if (goals == maxGoals) {
+                        grpPreds[team].points += 3;
+                        grpPreds[team].goals_for += maxGoals;
+                        grpPreds[team].goals_con += minGoals;
+                    } else {
+                        grpPreds[team].goals_for += minGoals;
+                        grpPreds[team].goals_con += maxGoals;
+                    }
+                });
+            }
         });
-        return allGroups;
+
+        console.log(grpPreds);
+        const rnk = sortGroup(grpPreds);
+        return rnk
     }
 
-    const preds = getGroupsPredictions();
-    return rankGroups(preds);
+    const predictions = getPredictions();
+    const ranking = rankGroup(predictions)
+    return [ranking];
 }
 
 // Navigation functions
@@ -364,6 +401,7 @@ const loadFormDataTrigger = new Event('loadFormDataTrigger');
 // Placeholder update function
 function updatePouleWinnerPlaceholder() {
     const winnerInputField = document.getElementsByClassName('winner-question')[0];
+    console.log(winnerInputField);
     const username = document.getElementById('username').value || document.getElementById('username').placeholder;
     winnerInputField.placeholder = username;
 }

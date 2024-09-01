@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             const groupList = document.getElementById('groups');
-            groups = Object.values(data.groups);
+            groups = Object.values(data.matches);
 
             const startDiv = document.createElement('div');
             startDiv.classList.add('group');
             const startTitle = document.createElement('h3');
             startTitle.classList.add('group-title');
-            startTitle.innerText = "Welkom bij het EURO24 poultje!";
+            startTitle.innerText = "Welkom bij het UCL 24/25 poultje!";
             const nameInputFieldSpan = document.createElement('span');
             nameInputFieldSpan.classList.add('username');
             nameInputFieldSpan.innerHTML = `
@@ -25,21 +25,26 @@ document.addEventListener("DOMContentLoaded", function() {
             groupList.appendChild(startDiv);
 
             // add sections for score entries
-            groups.forEach((group, index) => {
+            Object.entries(data.matches).forEach(([groupName, matches], index) => {                
                 const groupDiv = document.createElement('div');
                 groupDiv.classList.add('group');
                 groupDiv.style.display = 'none';
+            
                 const groupTitle = document.createElement('h3');
                 groupTitle.classList.add('group-title');
-                groupTitle.innerText = `Groep ${String.fromCharCode(65 + index)}`;
+                groupTitle.innerText = groupName;  // Now this will correctly set the title to "Tuesday, Sept. 17" or "Wednesday, Sept. 18"
+            
                 const groupPointsTotal = document.createElement('p');
                 groupPointsTotal.innerText = 'Max per wedstrijd: 7pt';
+            
                 const groupPointsSplit = document.createElement('p');
                 groupPointsSplit.innerText = 'Winnaar: +3pt | Marge: +2pt | Uitslag: +2pt';
                 groupPointsSplit.classList.add('italic');
+            
                 const groupMatchlist = document.createElement('ul');
                 groupMatchlist.classList.add('group-matchlist');
-                group.forEach(match => {
+            
+                matches.forEach(match => {
                     const matchLi = document.createElement('li');
                     matchLi.classList.add('match');
                     matchLi.innerHTML = `
@@ -49,31 +54,30 @@ document.addEventListener("DOMContentLoaded", function() {
                         <input type="number" id="${match.id}-away" name="${match.id}-away" class="away-score" min="0" value="0" required>
                         <label for="${match.id}-away" class="away-team">${match.awayTeam}</label>
                     `;
+            
                     const homeInput = matchLi.querySelector('.home-score');
                     const awayInput = matchLi.querySelector('.away-score');
-
+            
                     // Clear default value when input field is clicked
                     homeInput.addEventListener('click', () => {
                         if (homeInput.value === '0') {
                             homeInput.value = '';
                         }
                     });
-
+            
                     awayInput.addEventListener('click', () => {
                         if (awayInput.value === '0') {
                             awayInput.value = '';
                         }
                     });
-
+            
                     groupMatchlist.appendChild(matchLi);
                 });
-                const groupWarning = document.createElement('p');
-                groupWarning.innerHTML = '<span class="bold">Let op:</span> de speler die de meeste gelijke spelen voorspelt krijgt 10 extra punten.';
+            
                 groupDiv.appendChild(groupTitle);
                 groupDiv.appendChild(groupPointsTotal);
                 groupDiv.appendChild(groupPointsSplit);
                 groupDiv.appendChild(groupMatchlist);
-                groupDiv.appendChild(groupWarning);
                 groupList.appendChild(groupDiv);
             });
 
