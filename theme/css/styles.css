@@ -60,6 +60,18 @@ div.dashboards {
     align-items: stretch;
 }
 
+div.dashboards.column {
+    flex-direction: column;
+}
+
+div.dashboards.column iframe {
+    min-height: 80vh;
+}
+
+div.dashboards.column iframe.today-pivot {
+    min-height: 150vh;
+}
+
 div.dashboards iframe {
     flex: 4;
     min-height: 100vh;
