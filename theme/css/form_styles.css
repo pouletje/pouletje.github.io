@@ -60,6 +60,10 @@ form {
     text-align: center;
 }
 
+.match.motd {
+    border: 2px solid #FFD700; /* Gold border for Match of the Day */
+}
+
 .bonus-questions-list {
     list-style-type: none;
     padding-left: 0;

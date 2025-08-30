@@ -1,0 +1,99 @@
+{
+    "bonus": {
+        "io": [
+            {
+                "question": "Wie wordt de topscorer?",
+                "placeholder": "Justin Bijlow",
+                "note": "",
+                "points": "48pt",
+                "id": "1"
+            },
+            {
+                "question": "Wie wordt speler van het toernooi?",
+                "placeholder": "Nathan Rutjes",
+                "note": "",
+                "points": "48pt",
+                "id": "2"
+            },
+            {
+                "question": "Welke club wint de Champions League?",
+                "placeholder": "Argentinië",
+                "note": "",
+                "points": "48pt",
+                "id": "3"
+            },
+            {
+                "question": "Wie wint het poultje?",
+                "placeholder": "Jake",
+                "note": "Excl. deze vraag",
+                "points": "48pt",
+                "id": "4"
+            },
+            {
+                "question": "Hoe ver komt PSV?",
+                "placeholder": "Winnaar",
+                "note": "",
+                "points": "48pt",
+                "id": "5"
+            },
+            {
+                "question": "Hoe ver komt Ajax?",
+                "placeholder": "Winnaar",
+                "note": "",
+                "points": "48pt",
+                "id": "6"
+            }
+        ],
+        "incremental": [
+            {
+                "question": "Wie is je supplier?",
+                "placeholder": "Lionel Messi",
+                "points": "4",
+                "event": "assist",
+                "id": "7"
+            },
+            {
+                "question": "Wie is je schoffelaar?",
+                "placeholder": "Pepe",
+                "points": "5",
+                "event": "getoonde kaart",
+                "id": "8"
+            },
+            {
+                "question": "Wie is je supersub?",
+                "placeholder": "Will Grigg",
+                "points": "11",
+                "event": "doelpunt als invaller",
+                "id": "9"
+            }
+        ],
+        "range": [
+            {
+                "question": "Hoeveel doelpunten worden er gescoord?",
+                "placeholder": "618 goals vorig seizoen",
+                "note": "189 wedstrijden in totaal\nBij gelijkspel wordt deze vraag gebruikt als tiebreaker.",
+                "points": "80",
+                "deviation": "4 goals",
+                "decrease": "20",
+                "id": "10"
+            }
+        ],
+        "rules": [
+            {
+                "rule": "Player of the Day",
+                "explanation": "Iedere dagwinnaar krijgt 4 extra punten.",
+                "exception": "Alleen tijdens leaguefase. Bonuspunten tellen niet mee in dagranking, Match of the Day wel. Bij meerdere dagwinnaars krijgen zij allemaal een extra punt."
+            }, 
+            {
+                "rule": "Match of the Day",
+                "explanation": "Iedere speeldag is er 1 match of the day. Voor deze wedstrijd tellen de winnaar-, marge-, en uitslagpunten dubbel.",
+                "exception": "Alleen tijdens leaguefase."
+            }, 
+            {
+                "rule": "Fallback Finalist",
+                "explanation": "Als je finalist wordt uitgeschakeld mag je na de ronde van uitschakeling een nieuwe finalist kiezen. Die nieuwe finalist vervangt je oude finalist voor de rest van het toernooi (dus evt. ook als winnaar), maar is 40% van de punten waard.",
+                "exception": "Voor beide finalisten mag je dit 1x doen. Je krijgt geen punten voor de ronde waarvoor je fallback al is geplaatst op het moment van kiezen."
+            }
+        ]
+    }
+}

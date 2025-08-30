@@ -1,0 +1,180 @@
+{
+  "matches": {
+    "Tuesday, Sept. 16": [
+      { "id": 1, "homeTeam": "Athletic Club", "awayTeam": "Arsenal", "motd": 0},
+      { "id": 2, "homeTeam": "PSV Eindhoven", "awayTeam": "Union Saint-Gilloise", "motd": 0},
+      { "id": 3, "homeTeam": "Juventus", "awayTeam": "Borussia Dortmund", "motd": 1},
+      { "id": 4, "homeTeam": "Real Madrid", "awayTeam": "Marseille", "motd": 0},
+      { "id": 5, "homeTeam": "Benfica", "awayTeam": "Qarabag", "motd": 0},
+      { "id": 6, "homeTeam": "Tottenham", "awayTeam": "Villarreal", "motd": 0}
+    ],
+    "Wednesday, Sept. 17": [
+      { "id": 7, "homeTeam": "Olympiacos", "awayTeam": "Pafos", "motd": 0},
+      { "id": 8, "homeTeam": "Slavia Praha", "awayTeam": "Bodo Glimt", "motd": 0},
+      { "id": 9, "homeTeam": "Ajax", "awayTeam": "Inter", "motd": 0},
+      { "id": 10, "homeTeam": "Bayern Munchen", "awayTeam": "Chelsea", "motd": 1},
+      { "id": 11, "homeTeam": "Liverpool", "awayTeam": "Atletico de Madrid", "motd": 0},
+      { "id": 12, "homeTeam": "Paris Saint-Germain", "awayTeam": "Atalanta", "motd": 0}
+    ],
+    "Thursday, Sept. 18": [
+      { "id": 13, "homeTeam": "Club Brugge", "awayTeam": "Monaco", "motd": 0},
+      { "id": 14, "homeTeam": "Copenhagen", "awayTeam": "Leverkusen", "motd": 0},
+      { "id": 15, "homeTeam": "Frankfurt", "awayTeam": "Galatasaray", "motd": 0},
+      { "id": 16, "homeTeam": "Manchester City", "awayTeam": "Napoli", "motd": 1},
+      { "id": 17, "homeTeam": "Newcastle United", "awayTeam": "Barcelona", "motd": 0},
+      { "id": 18, "homeTeam": "Sporting CP", "awayTeam": "Kairat Almaty", "motd": 0}
+    ],
+    "Tuesday, Sept. 30": [
+      { "id": 19, "homeTeam": "Atalanta", "awayTeam": "Club Brugge", "motd": 0},
+      { "id": 20, "homeTeam": "Kairat Almaty", "awayTeam": "Real Madrid", "motd": 0},
+      { "id": 21, "homeTeam": "Atletico de Madrid", "awayTeam": "Frankfurt", "motd": 1},
+      { "id": 22, "homeTeam": "Chelsea", "awayTeam": "Benfica", "motd": 0},
+      { "id": 23, "homeTeam": "Inter", "awayTeam": "Slavia Praha", "motd": 0},
+      { "id": 24, "homeTeam": "Bodo Glimt", "awayTeam": "Tottenham", "motd": 0},
+      { "id": 25, "homeTeam": "Galatasaray", "awayTeam": "Liverpool", "motd": 0},
+      { "id": 26, "homeTeam": "Marseille", "awayTeam": "Ajax", "motd": 0},
+      { "id": 27, "homeTeam": "Pafos", "awayTeam": "Bayern Munchen", "motd": 0}
+    ],
+    "Wednesday, Oct. 1": [
+      { "id": 28, "homeTeam": "Qarabag", "awayTeam": "Copenhagen", "motd": 0},
+      { "id": 29, "homeTeam": "Union Saint-Gilloise", "awayTeam": "Newcastle United", "motd": 0},
+      { "id": 30, "homeTeam": "Arsenal", "awayTeam": "Olympiacos", "motd": 0},
+      { "id": 31, "homeTeam": "Monaco", "awayTeam": "Manchester City", "motd": 0},
+      { "id": 32, "homeTeam": "Leverkusen", "awayTeam": "PSV Eindhoven", "motd": 0},
+      { "id": 33, "homeTeam": "Borussia Dortmund", "awayTeam": "Athletic Club", "motd": 0},
+      { "id": 34, "homeTeam": "Barcelona", "awayTeam": "Paris Saint-Germain", "motd": 1},
+      { "id": 35, "homeTeam": "Napoli", "awayTeam": "Sporting CP", "motd": 0},
+      { "id": 36, "homeTeam": "Villarreal", "awayTeam": "Juventus", "motd": 0}
+    ],
+    "Tuesday, Oct. 21": [
+      { "id": 37, "homeTeam": "Barcelona", "awayTeam": "Olympiacos", "motd": 0},
+      { "id": 38, "homeTeam": "Kairat Almaty", "awayTeam": "Pafos", "motd": 0},
+      { "id": 39, "homeTeam": "Arsenal", "awayTeam": "Atletico de Madrid", "motd": 0},
+      { "id": 40, "homeTeam": "Leverkusen", "awayTeam": "Paris Saint-Germain", "motd": 1},
+      { "id": 41, "homeTeam": "Copenhagen", "awayTeam": "Borussia Dortmund", "motd": 0},
+      { "id": 42, "homeTeam": "Newcastle United", "awayTeam": "Benfica", "motd": 0},
+      { "id": 43, "homeTeam": "PSV Eindhoven", "awayTeam": "Napoli", "motd": 0},
+      { "id": 44, "homeTeam": "Union Saint-Gilloise", "awayTeam": "Inter", "motd": 0},
+      { "id": 45, "homeTeam": "Villarreal", "awayTeam": "Manchester City", "motd": 0}
+    ],
+    "Wednesday, Oct. 22": [
+      { "id": 46, "homeTeam": "Athletic Club", "awayTeam": "Qarabag", "motd": 0},
+      { "id": 47, "homeTeam": "Galatasaray", "awayTeam": "Bodo Glimt", "motd": 0},
+      { "id": 48, "homeTeam": "Monaco", "awayTeam": "Tottenham", "motd": 0},
+      { "id": 49, "homeTeam": "Atalanta", "awayTeam": "Slavia Praha", "motd": 0},
+      { "id": 50, "homeTeam": "Chelsea", "awayTeam": "Ajax", "motd": 0},
+      { "id": 51, "homeTeam": "Frankfurt", "awayTeam": "Liverpool", "motd": 0},
+      { "id": 52, "homeTeam": "Bayern Munchen", "awayTeam": "Club Brugge", "motd": 0},
+      { "id": 53, "homeTeam": "Real Madrid", "awayTeam": "Juventus", "motd": 1},
+      { "id": 54, "homeTeam": "Sporting CP", "awayTeam": "Marseille", "motd": 0}
+    ],
+    "Tuesday, Nov. 4": [
+      { "id": 55, "homeTeam": "Slavia Praha", "awayTeam": "Arsenal", "motd": 0},
+      { "id": 56, "homeTeam": "Napoli", "awayTeam": "Frankfurt", "motd": 0},
+      { "id": 57, "homeTeam": "Atletico de Madrid", "awayTeam": "Union Saint-Gilloise", "motd": 0},
+      { "id": 58, "homeTeam": "Bodo Glimt", "awayTeam": "Monaco", "motd": 0},
+      { "id": 59, "homeTeam": "Juventus", "awayTeam": "Sporting CP", "motd": 0},
+      { "id": 60, "homeTeam": "Liverpool", "awayTeam": "Real Madrid", "motd": 1},
+      { "id": 61, "homeTeam": "Olympiacos", "awayTeam": "PSV Eindhoven", "motd": 0},
+      { "id": 62, "homeTeam": "Paris Saint-Germain", "awayTeam": "Bayern Munchen", "motd": 0},
+      { "id": 63, "homeTeam": "Tottenham", "awayTeam": "Copenhagen", "motd": 0}
+    ],
+    "Wednesday, Nov. 5": [
+      { "id": 64, "homeTeam": "Pafos", "awayTeam": "Villarreal", "motd": 0},
+      { "id": 65, "homeTeam": "Qarabag", "awayTeam": "Chelsea", "motd": 0},
+      { "id": 66, "homeTeam": "Ajax", "awayTeam": "Galatasaray", "motd": 0},
+      { "id": 67, "homeTeam": "Club Brugge", "awayTeam": "Barcelona", "motd": 0},
+      { "id": 68, "homeTeam": "Inter", "awayTeam": "Kairat Almaty", "motd": 0},
+      { "id": 69, "homeTeam": "Manchester City", "awayTeam": "Borussia Dortmund", "motd": 1},
+      { "id": 70, "homeTeam": "Newcastle United", "awayTeam": "Athletic Club", "motd": 0},
+      { "id": 71, "homeTeam": "Marseille", "awayTeam": "Atalanta", "motd": 0},
+      { "id": 72, "homeTeam": "Benfica", "awayTeam": "Leverkusen", "motd": 0}
+    ],
+    "Tuesday, Nov. 25": [
+      { "id": 73, "homeTeam": "Ajax", "awayTeam": "Benfica", "motd": 0},
+      { "id": 74, "homeTeam": "Galatasaray", "awayTeam": "Union Saint-Gilloise", "motd": 0},
+      { "id": 75, "homeTeam": "Borussia Dortmund", "awayTeam": "Villarreal", "motd": 0},
+      { "id": 76, "homeTeam": "Chelsea", "awayTeam": "Barcelona", "motd": 1},
+      { "id": 77, "homeTeam": "Bodo Glimt", "awayTeam": "Juventus", "motd": 0},
+      { "id": 78, "homeTeam": "Manchester City", "awayTeam": "Leverkusen", "motd": 0},
+      { "id": 79, "homeTeam": "Marseille", "awayTeam": "Newcastle United", "motd": 0},
+      { "id": 80, "homeTeam": "Slavia Praha", "awayTeam": "Athletic Club", "motd": 0},
+      { "id": 81, "homeTeam": "Napoli", "awayTeam": "Qarabag", "motd": 0}
+    ],
+    "Wednesday, Nov. 26": [
+      { "id": 82, "homeTeam": "Copenhagen", "awayTeam": "Kairat Almaty", "motd": 0},
+      { "id": 83, "homeTeam": "Pafos", "awayTeam": "Monaco", "motd": 0},
+      { "id": 84, "homeTeam": "Arsenal", "awayTeam": "Bayern Munchen", "motd": 1},
+      { "id": 85, "homeTeam": "Atletico de Madrid", "awayTeam": "Inter", "motd": 0},
+      { "id": 86, "homeTeam": "Frankfurt", "awayTeam": "Atalanta", "motd": 0},
+      { "id": 87, "homeTeam": "Liverpool", "awayTeam": "PSV Eindhoven", "motd": 0},
+      { "id": 88, "homeTeam": "Olympiacos", "awayTeam": "Real Madrid", "motd": 0},
+      { "id": 89, "homeTeam": "Paris Saint-Germain", "awayTeam": "Tottenham", "motd": 0},
+      { "id": 90, "homeTeam": "Sporting CP", "awayTeam": "Club Brugge", "motd": 0}
+    ],
+    "Tuesday, Dec. 9": [
+      { "id": 91, "homeTeam": "Kairat Almaty", "awayTeam": "Olympiacos", "motd": 0},
+      { "id": 92, "homeTeam": "Bayern Munchen", "awayTeam": "Sporting CP", "motd": 0},
+      { "id": 93, "homeTeam": "Monaco", "awayTeam": "Galatasaray", "motd": 0},
+      { "id": 94, "homeTeam": "Atalanta", "awayTeam": "Chelsea", "motd": 0},
+      { "id": 95, "homeTeam": "Barcelona", "awayTeam": "Frankfurt", "motd": 0},
+      { "id": 96, "homeTeam": "Inter", "awayTeam": "Liverpool", "motd": 1},
+      { "id": 97, "homeTeam": "PSV Eindhoven", "awayTeam": "Atletico de Madrid", "motd": 0},
+      { "id": 98, "homeTeam": "Union Saint-Gilloise", "awayTeam": "Marseille", "motd": 0},
+      { "id": 99, "homeTeam": "Tottenham", "awayTeam": "Slavia Praha", "motd": 0}
+    ],
+    "Wednesday, Dec. 10": [
+      { "id": 100, "homeTeam": "Qarabag", "awayTeam": "Ajax", "motd": 0},
+      { "id": 101, "homeTeam": "Villarreal", "awayTeam": "Copenhagen", "motd": 0},
+      { "id": 102, "homeTeam": "Athletic Club", "awayTeam": "Paris Saint-Germain", "motd": 0},
+      { "id": 103, "homeTeam": "Leverkusen", "awayTeam": "Newcastle United", "motd": 0},
+      { "id": 104, "homeTeam": "Borussia Dortmund", "awayTeam": "Bodo Glimt", "motd": 0},
+      { "id": 105, "homeTeam": "Club Brugge", "awayTeam": "Arsenal", "motd": 0},
+      { "id": 106, "homeTeam": "Juventus", "awayTeam": "Pafos", "motd": 0},
+      { "id": 107, "homeTeam": "Real Madrid", "awayTeam": "Manchester City", "motd": 1},
+      { "id": 108, "homeTeam": "Benfica", "awayTeam": "Napoli", "motd": 0}
+    ],
+    "Tuesday, Jan. 20": [
+      { "id": 109, "homeTeam": "Kairat Almaty", "awayTeam": "Club Brugge", "motd": 0},
+      { "id": 110, "homeTeam": "Bodo Glimt", "awayTeam": "Manchester City", "motd": 0},
+      { "id": 111, "homeTeam": "Copenhagen", "awayTeam": "Napoli", "motd": 0},
+      { "id": 112, "homeTeam": "Inter", "awayTeam": "Arsenal", "motd": 1},
+      { "id": 113, "homeTeam": "Olympiacos", "awayTeam": "Leverkusen", "motd": 0},
+      { "id": 114, "homeTeam": "Real Madrid", "awayTeam": "Monaco", "motd": 0},
+      { "id": 115, "homeTeam": "Sporting CP", "awayTeam": "Paris Saint-Germain", "motd": 0},
+      { "id": 116, "homeTeam": "Tottenham", "awayTeam": "Borussia Dortmund", "motd": 0},
+      { "id": 117, "homeTeam": "Villarreal", "awayTeam": "Ajax", "motd": 0}
+    ],
+    "Wednesday, Jan. 21": [
+      { "id": 118, "homeTeam": "Galatasaray", "awayTeam": "Atletico de Madrid", "motd": 0},
+      { "id": 119, "homeTeam": "Qarabag", "awayTeam": "Frankfurt", "motd": 0},
+      { "id": 120, "homeTeam": "Atalanta", "awayTeam": "Athletic Club", "motd": 0},
+      { "id": 121, "homeTeam": "Chelsea", "awayTeam": "Pafos", "motd": 0},
+      { "id": 122, "homeTeam": "Bayern Munchen", "awayTeam": "Union Saint-Gilloise", "motd": 0},
+      { "id": 123, "homeTeam": "Juventus", "awayTeam": "Benfica", "motd": 0},
+      { "id": 124, "homeTeam": "Newcastle United", "awayTeam": "PSV Eindhoven", "motd": 1},
+      { "id": 125, "homeTeam": "Marseille", "awayTeam": "Liverpool", "motd": 0},
+      { "id": 126, "homeTeam": "Slavia Praha", "awayTeam": "Barcelona", "motd": 0}
+    ],
+    "Wednesday, Jan. 28": [
+      { "id": 127, "homeTeam": "Ajax", "awayTeam": "Olympiacos", "motd": 0},
+      { "id": 128, "homeTeam": "Arsenal", "awayTeam": "Kairat Almaty", "motd": 0},
+      { "id": 129, "homeTeam": "Monaco", "awayTeam": "Juventus", "motd": 0},
+      { "id": 130, "homeTeam": "Athletic Club", "awayTeam": "Sporting CP", "motd": 0},
+      { "id": 131, "homeTeam": "Atletico de Madrid", "awayTeam": "Bodo Glimt", "motd": 0},
+      { "id": 132, "homeTeam": "Leverkusen", "awayTeam": "Villarreal", "motd": 0},
+      { "id": 133, "homeTeam": "Borussia Dortmund", "awayTeam": "Inter", "motd": 1},
+      { "id": 134, "homeTeam": "Club Brugge", "awayTeam": "Marseille", "motd": 0},
+      { "id": 135, "homeTeam": "Frankfurt", "awayTeam": "Tottenham", "motd": 0},
+      { "id": 136, "homeTeam": "Barcelona", "awayTeam": "Copenhagen", "motd": 0},
+      { "id": 137, "homeTeam": "Liverpool", "awayTeam": "Qarabag", "motd": 0},
+      { "id": 138, "homeTeam": "Manchester City", "awayTeam": "Galatasaray", "motd": 0},
+      { "id": 139, "homeTeam": "Pafos", "awayTeam": "Slavia Praha", "motd": 0},
+      { "id": 140, "homeTeam": "Paris Saint-Germain", "awayTeam": "Newcastle United", "motd": 0},
+      { "id": 141, "homeTeam": "PSV Eindhoven", "awayTeam": "Bayern Munchen", "motd": 0},
+      { "id": 142, "homeTeam": "Union Saint-Gilloise", "awayTeam": "Atalanta", "motd": 0},
+      { "id": 143, "homeTeam": "Benfica", "awayTeam": "Real Madrid", "motd": 0},
+      { "id": 144, "homeTeam": "Napoli", "awayTeam": "Chelsea", "motd": 0}
+    ]
+}
+}

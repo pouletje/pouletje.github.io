@@ -37,7 +37,7 @@ function autoFillKOR16(event) {
             let i = 0
             group_rank.forEach(team => {
                 if (i > 7 && i < 24) {
-                    const playoff_inputfield = createInputField("Land", "playoff-" + Number(i + 1));
+                    const playoff_inputfield = createInputField("Team", "playoff-" + Number(i + 1));
                     playoff_inputfield.setAttribute('value', team.country);
                     grid_temp.appendChild(playoff_inputfield);
                 }
@@ -56,7 +56,7 @@ function autoFillKOR16(event) {
             let i = 0
             group_rank.forEach(team => {
                 if (i < 8) {
-                    const r16_inputfield = createInputField("Land", "r16-" + i);
+                    const r16_inputfield = createInputField("Team", "r16-" + i);
                     r16_inputfield.setAttribute('value', team.country);
                     grid_temp.appendChild(r16_inputfield);
                 }
@@ -64,7 +64,7 @@ function autoFillKOR16(event) {
             })
             
             for (i = 8; i < 16; i++) {
-                const open_field = createInputField("Land", "r16-" + i);
+                const open_field = createInputField("Team", "r16-" + i);
                 grid_temp.appendChild(open_field)
             }
         })
@@ -110,7 +110,7 @@ function updateKnockoutsPage() {
         const playoff_grid = createGrid(4);
         playoff_grid.id = 'playoff-grid';
         for (let i = 9; i < 25; i++) {
-            const playoff_country = createInputField("Land", "playoff-" + i);
+            const playoff_country = createInputField("Team", "playoff-" + i);
             playoff_grid.appendChild(playoff_country);
         }
         playoff_div.appendChild(playoff_grid);
@@ -125,7 +125,7 @@ function updateKnockoutsPage() {
         const r16_grid = createGrid(4);
         r16_grid.id = 'ko-r16-grid';
         for (let i = 0; i < 16; i++) {
-            const r16_country = createInputField("Land", "r16-" + i);
+            const r16_country = createInputField("Team", "r16-" + i);
             r16_grid.appendChild(r16_country);
         }
         r16_div.appendChild(r16_grid);
@@ -196,7 +196,7 @@ function updateKnockoutsPage() {
         const table = document.createElement('table');
         const thead = document.createElement('thead');
         thead.innerHTML = `
-            <th class="country">Land</th>
+            <th class="country">Team</th>
             <th class="points">P</th>
             <th class="goals">G</th>
             <th class="goaldiff">GD</th>
@@ -377,12 +377,12 @@ function saveFormData() {
     inputFields.forEach(field => {
         formData[field.name] = field.value;
     });
-    localStorage.setItem('form_data', JSON.stringify(formData));
+    localStorage.setItem('form_data_ucl2526', JSON.stringify(formData));
 }
 
 function loadFormData() {
     console.log('Loading previous input...');
-    const formData = JSON.parse(localStorage.getItem('form_data'));
+    const formData = JSON.parse(localStorage.getItem('form_data_ucl2526'));
     if (formData) {
         const inputFields = document.querySelectorAll('input');
         inputFields.forEach(field => {

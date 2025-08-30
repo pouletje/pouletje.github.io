@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             startDiv.classList.add('group');
             const startTitle = document.createElement('h3');
             startTitle.classList.add('group-title');
-            startTitle.innerText = "Welkom bij het UCL 24/25 poultje!";
+            startTitle.innerText = "Welkom bij het UCL 25/26 poultje!";
             const nameInputFieldSpan = document.createElement('span');
             nameInputFieldSpan.classList.add('username');
             nameInputFieldSpan.innerHTML = `
@@ -40,6 +40,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 const groupPointsSplit = document.createElement('p');
                 groupPointsSplit.innerText = 'Winnaar: +3pt | Marge: +2pt | Uitslag: +2pt';
                 groupPointsSplit.classList.add('italic');
+
+                const motdMessage = document.createElement('p');
+                motdMessage.innerHTML = '<span style="color: #FFD700">Match of the Day</span>: dubbele punten.';
             
                 const groupMatchlist = document.createElement('ul');
                 groupMatchlist.classList.add('group-matchlist');
@@ -47,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 matches.forEach(match => {
                     const matchLi = document.createElement('li');
                     matchLi.classList.add('match');
+                    if (match.motd === 1) {
+                        matchLi.classList.add('motd');
+                    }
                     matchLi.innerHTML = `
                         <label for="${match.id}-home" class="home-team">${match.homeTeam}</label>
                         <input type="number" id="${match.id}-home" name="${match.id}-home" class="home-score" min="0" value="0" required>
@@ -77,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 groupDiv.appendChild(groupTitle);
                 groupDiv.appendChild(groupPointsTotal);
                 groupDiv.appendChild(groupPointsSplit);
+                groupDiv.appendChild(motdMessage);
                 groupDiv.appendChild(groupMatchlist);
                 groupList.appendChild(groupDiv);
             });
