@@ -91,8 +91,8 @@
             }, 
             {
                 "rule": "Fallback Finalist",
-                "explanation": "Als je finalist wordt uitgeschakeld mag je na de ronde van uitschakeling een nieuwe finalist kiezen. Die nieuwe finalist vervangt je oude finalist voor de rest van het toernooi (dus evt. ook als winnaar), maar is 40% van de punten waard.",
-                "exception": "Voor beide finalisten mag je dit 1x doen. Je krijgt geen punten voor de ronde waarvoor je fallback al is geplaatst op het moment van kiezen."
+                "explanation": "Als je finalist wordt uitgeschakeld mag je na de ronde van uitschakeling een nieuwe finalist kiezen. Die nieuwe finalist vervangt je oude finalist overal waar je de fallback nog niet had voorspeld, maar is vanaf dan nog 40% van de punten waard.",
+                "exception": "Voor beide finalisten mag je dit 1x doen. Je krijgt geen punten voor de ronde waarvoor je fallback al is geplaatst op het moment van kiezen. Een team mag maar 1x per ronde in je voorspelling voorkomen, dus de fallback gaat pas in vanaf de door jou voorspelde uitschakeling van dat team. Voorbeeld: PSV is je voorspelde winnaar, maar PSV wordt in de league fase uitgeschakeld. Je wilt Ajax kiezen als fallback, maar had Ajax in de halve finale voorspeld. Ajax geldt dan pas als je fallback na hun voorspelde uitschakeling in de halve finale: als finalist en als winnaar."
             }
         ]
     }
