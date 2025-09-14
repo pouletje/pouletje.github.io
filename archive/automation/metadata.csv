@@ -1,0 +1,145 @@
+match_id,home_team,away_team,matchday_date
+1,Athletic Club,Arsenal,Tuesday, Sept. 16
+2,PSV Eindhoven,Union Saint-Gilloise,Tuesday, Sept. 16
+3,Juventus,Borussia Dortmund,Tuesday, Sept. 16
+4,Real Madrid,Marseille,Tuesday, Sept. 16
+5,Benfica,Qarabag,Tuesday, Sept. 16
+6,Tottenham,Villarreal,Tuesday, Sept. 16
+7,Olympiacos,Pafos,Wednesday, Sept. 17
+8,Slavia Praha,Bodo Glimt,Wednesday, Sept. 17
+9,Ajax,Inter,Wednesday, Sept. 17
+10,Bayern Munchen,Chelsea,Wednesday, Sept. 17
+11,Liverpool,Atletico de Madrid,Wednesday, Sept. 17
+12,Paris Saint-Germain,Atalanta,Wednesday, Sept. 17
+13,Club Brugge,Monaco,Thursday, Sept. 18
+14,Copenhagen,Leverkusen,Thursday, Sept. 18
+15,Frankfurt,Galatasaray,Thursday, Sept. 18
+16,Manchester City,Napoli,Thursday, Sept. 18
+17,Newcastle United,Barcelona,Thursday, Sept. 18
+18,Sporting CP,Kairat Almaty,Thursday, Sept. 18
+19,Atalanta,Club Brugge,Tuesday, Sept. 30
+20,Kairat Almaty,Real Madrid,Tuesday, Sept. 30
+21,Atletico de Madrid,Frankfurt,Tuesday, Sept. 30
+22,Chelsea,Benfica,Tuesday, Sept. 30
+23,Inter,Slavia Praha,Tuesday, Sept. 30
+24,Bodo Glimt,Tottenham,Tuesday, Sept. 30
+25,Galatasaray,Liverpool,Tuesday, Sept. 30
+26,Marseille,Ajax,Tuesday, Sept. 30
+27,Pafos,Bayern Munchen,Tuesday, Sept. 30
+28,Qarabag,Copenhagen,Wednesday, Oct. 1
+29,Union Saint-Gilloise,Newcastle United,Wednesday, Oct. 1
+30,Arsenal,Olympiacos,Wednesday, Oct. 1
+31,Monaco,Manchester City,Wednesday, Oct. 1
+32,Leverkusen,PSV Eindhoven,Wednesday, Oct. 1
+33,Borussia Dortmund,Athletic Club,Wednesday, Oct. 1
+34,Barcelona,Paris Saint-Germain,Wednesday, Oct. 1
+35,Napoli,Sporting CP,Wednesday, Oct. 1
+36,Villarreal,Juventus,Wednesday, Oct. 1
+37,Barcelona,Olympiacos,Tuesday, Oct. 21
+38,Kairat Almaty,Pafos,Tuesday, Oct. 21
+39,Arsenal,Atletico de Madrid,Tuesday, Oct. 21
+40,Leverkusen,Paris Saint-Germain,Tuesday, Oct. 21
+41,Copenhagen,Borussia Dortmund,Tuesday, Oct. 21
+42,Newcastle United,Benfica,Tuesday, Oct. 21
+43,PSV Eindhoven,Napoli,Tuesday, Oct. 21
+44,Union Saint-Gilloise,Inter,Tuesday, Oct. 21
+45,Villarreal,Manchester City,Tuesday, Oct. 21
+46,Athletic Club,Qarabag,Wednesday, Oct. 22
+47,Galatasaray,Bodo Glimt,Wednesday, Oct. 22
+48,Monaco,Tottenham,Wednesday, Oct. 22
+49,Atalanta,Slavia Praha,Wednesday, Oct. 22
+50,Chelsea,Ajax,Wednesday, Oct. 22
+51,Frankfurt,Liverpool,Wednesday, Oct. 22
+52,Bayern Munchen,Club Brugge,Wednesday, Oct. 22
+53,Real Madrid,Juventus,Wednesday, Oct. 22
+54,Sporting CP,Marseille,Wednesday, Oct. 22
+55,Slavia Praha,Arsenal,Tuesday, Nov. 4
+56,Napoli,Frankfurt,Tuesday, Nov. 4
+57,Atletico de Madrid,Union Saint-Gilloise,Tuesday, Nov. 4
+58,Bodo Glimt,Monaco,Tuesday, Nov. 4
+59,Juventus,Sporting CP,Tuesday, Nov. 4
+60,Liverpool,Real Madrid,Tuesday, Nov. 4
+61,Olympiacos,PSV Eindhoven,Tuesday, Nov. 4
+62,Paris Saint-Germain,Bayern Munchen,Tuesday, Nov. 4
+63,Tottenham,Copenhagen,Tuesday, Nov. 4
+64,Pafos,Villarreal,Wednesday, Nov. 5
+65,Qarabag,Chelsea,Wednesday, Nov. 5
+66,Ajax,Galatasaray,Wednesday, Nov. 5
+67,Club Brugge,Barcelona,Wednesday, Nov. 5
+68,Inter,Kairat Almaty,Wednesday, Nov. 5
+69,Manchester City,Borussia Dortmund,Wednesday, Nov. 5
+70,Newcastle United,Athletic Club,Wednesday, Nov. 5
+71,Marseille,Atalanta,Wednesday, Nov. 5
+72,Benfica,Leverkusen,Wednesday, Nov. 5
+73,Ajax,Benfica,Tuesday, Nov. 25
+74,Galatasaray,Union Saint-Gilloise,Tuesday, Nov. 25
+75,Borussia Dortmund,Villarreal,Tuesday, Nov. 25
+76,Chelsea,Barcelona,Tuesday, Nov. 25
+77,Bodo Glimt,Juventus,Tuesday, Nov. 25
+78,Manchester City,Leverkusen,Tuesday, Nov. 25
+79,Marseille,Newcastle United,Tuesday, Nov. 25
+80,Slavia Praha,Athletic Club,Tuesday, Nov. 25
+81,Napoli,Qarabag,Tuesday, Nov. 25
+82,Copenhagen,Kairat Almaty,Wednesday, Nov. 26
+83,Pafos,Monaco,Wednesday, Nov. 26
+84,Arsenal,Bayern Munchen,Wednesday, Nov. 26
+85,Atletico de Madrid,Inter,Wednesday, Nov. 26
+86,Frankfurt,Atalanta,Wednesday, Nov. 26
+87,Liverpool,PSV Eindhoven,Wednesday, Nov. 26
+88,Olympiacos,Real Madrid,Wednesday, Nov. 26
+89,Paris Saint-Germain,Tottenham,Wednesday, Nov. 26
+90,Sporting CP,Club Brugge,Wednesday, Nov. 26
+91,Kairat Almaty,Olympiacos,Tuesday, Dec. 9
+92,Bayern Munchen,Sporting CP,Tuesday, Dec. 9
+93,Monaco,Galatasaray,Tuesday, Dec. 9
+94,Atalanta,Chelsea,Tuesday, Dec. 9
+95,Barcelona,Frankfurt,Tuesday, Dec. 9
+96,Inter,Liverpool,Tuesday, Dec. 9
+97,PSV Eindhoven,Atletico de Madrid,Tuesday, Dec. 9
+98,Union Saint-Gilloise,Marseille,Tuesday, Dec. 9
+99,Tottenham,Slavia Praha,Tuesday, Dec. 9
+100,Qarabag,Ajax,Wednesday, Dec. 10
+101,Villarreal,Copenhagen,Wednesday, Dec. 10
+102,Athletic Club,Paris Saint-Germain,Wednesday, Dec. 10
+103,Leverkusen,Newcastle United,Wednesday, Dec. 10
+104,Borussia Dortmund,Bodo Glimt,Wednesday, Dec. 10
+105,Club Brugge,Arsenal,Wednesday, Dec. 10
+106,Juventus,Pafos,Wednesday, Dec. 10
+107,Real Madrid,Manchester City,Wednesday, Dec. 10
+108,Benfica,Napoli,Wednesday, Dec. 10
+109,Kairat Almaty,Club Brugge,Tuesday, Jan. 20
+110,Bodo Glimt,Manchester City,Tuesday, Jan. 20
+111,Copenhagen,Napoli,Tuesday, Jan. 20
+112,Inter,Arsenal,Tuesday, Jan. 20
+113,Olympiacos,Leverkusen,Tuesday, Jan. 20
+114,Real Madrid,Monaco,Tuesday, Jan. 20
+115,Sporting CP,Paris Saint-Germain,Tuesday, Jan. 20
+116,Tottenham,Borussia Dortmund,Tuesday, Jan. 20
+117,Villarreal,Ajax,Tuesday, Jan. 20
+118,Galatasaray,Atletico de Madrid,Wednesday, Jan. 21
+119,Qarabag,Frankfurt,Wednesday, Jan. 21
+120,Atalanta,Athletic Club,Wednesday, Jan. 21
+121,Chelsea,Pafos,Wednesday, Jan. 21
+122,Bayern Munchen,Union Saint-Gilloise,Wednesday, Jan. 21
+123,Juventus,Benfica,Wednesday, Jan. 21
+124,Newcastle United,PSV Eindhoven,Wednesday, Jan. 21
+125,Marseille,Liverpool,Wednesday, Jan. 21
+126,Slavia Praha,Barcelona,Wednesday, Jan. 21
+127,Ajax,Olympiacos,Wednesday, Jan. 28
+128,Arsenal,Kairat Almaty,Wednesday, Jan. 28
+129,Monaco,Juventus,Wednesday, Jan. 28
+130,Athletic Club,Sporting CP,Wednesday, Jan. 28
+131,Atletico de Madrid,Bodo Glimt,Wednesday, Jan. 28
+132,Leverkusen,Villarreal,Wednesday, Jan. 28
+133,Borussia Dortmund,Inter,Wednesday, Jan. 28
+134,Club Brugge,Marseille,Wednesday, Jan. 28
+135,Frankfurt,Tottenham,Wednesday, Jan. 28
+136,Barcelona,Copenhagen,Wednesday, Jan. 28
+137,Liverpool,Qarabag,Wednesday, Jan. 28
+138,Manchester City,Galatasaray,Wednesday, Jan. 28
+139,Pafos,Slavia Praha,Wednesday, Jan. 28
+140,Paris Saint-Germain,Newcastle United,Wednesday, Jan. 28
+141,PSV Eindhoven,Bayern Munchen,Wednesday, Jan. 28
+142,Union Saint-Gilloise,Atalanta,Wednesday, Jan. 28
+143,Benfica,Real Madrid,Wednesday, Jan. 28
+144,Napoli,Chelsea,Wednesday, Jan. 28
