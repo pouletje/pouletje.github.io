@@ -403,14 +403,59 @@ function saveFormData() {
 
 function loadFormData() {
     console.log('Loading previous input...');
-    const formData = JSON.parse(localStorage.getItem('form_data_wk2026'));
-    if (formData) {
-        document.querySelectorAll('input, select').forEach(field => {
-            if (field.name && formData.hasOwnProperty(field.name)) {
-                field.value = formData[field.name];
-            }
+    const formData = JSON.parse(localStorage.getItem('form_data_wk2026')) || {};
+
+    // Build the KO page with saved data so downstream selects have correct options
+    const ko_page = document.getElementById('knockout-page');
+    if (ko_page) {
+        ko_page.innerHTML = '';
+        const knockoutTitle = document.createElement('h3');
+        knockoutTitle.classList.add('group-title');
+        knockoutTitle.innerText = "Knockouts";
+        ko_page.appendChild(knockoutTitle);
+
+        const standingsDiv = document.createElement('div');
+        standingsDiv.classList.add('standings');
+        const rankings = makeRankings();
+        rankings.forEach(grp => {
+            const tableWrapper = document.createElement('div');
+            tableWrapper.classList.add('table-wrapper');
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            thead.innerHTML = `<tr>
+                <th class="country">Team</th>
+                <th class="points">P</th>
+                <th class="goals">D</th>
+                <th class="goaldiff">SD</th>
+            </tr>`;
+            table.appendChild(thead);
+            table.classList.add('group-standings');
+            const tbody = document.createElement('tbody');
+            grp.forEach(cntry => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="country">${cntry.country}</td>
+                    <td class="points">${cntry.points}</td>
+                    <td class="goals">${cntry.goals_for}:${cntry.goals_con}</td>
+                    <td class="goaldiff">${cntry.goal_diff > 0 ? '+' : ''}${cntry.goal_diff}</td>
+                `;
+                tbody.appendChild(row);
+            });
+            table.appendChild(tbody);
+            tableWrapper.appendChild(table);
+            standingsDiv.appendChild(tableWrapper);
         });
+        ko_page.appendChild(standingsDiv);
+        ko_page.appendChild(generateKoInputFields(formData));
     }
+
+    // Restore all other inputs and selects
+    document.querySelectorAll('input, select').forEach(field => {
+        if (field.name && formData.hasOwnProperty(field.name)) {
+            field.value = formData[field.name];
+        }
+    });
+
     console.log('All previous input loaded.');
 }
 

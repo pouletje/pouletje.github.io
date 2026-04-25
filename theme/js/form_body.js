@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
             ko_page_temp.id = 'knockout-page';
             ko_page_temp.style.display = 'none';
             groupList.appendChild(ko_page_temp);
-            updateKnockoutsPage();
             groups.push({"knockout": "page"});
 
             // add sections for bonus
