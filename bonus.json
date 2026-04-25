@@ -1,0 +1,102 @@
+{
+    "bonus": {
+        "io": [
+            {
+                "question": "Wie wordt de topscorer?",
+                "placeholder": "Bart Verbruggen",
+                "note": "",
+                "points": "24pt",
+                "id": "1"
+            },
+            {
+                "question": "Wie wordt speler van het toernooi?",
+                "placeholder": "Will Grigg",
+                "note": "",
+                "points": "24pt",
+                "id": "2"
+            },
+            {
+                "question": "Welke land wordt wereldkampioen?",
+                "placeholder": "Nederland",
+                "note": "",
+                "points": "24pt",
+                "id": "3"
+            },
+            {
+                "question": "Wie wint het poultje?",
+                "placeholder": "Jake",
+                "note": "Excl. deze vraag",
+                "points": "24pt",
+                "id": "4"
+            },
+            {
+                "question": "Welk land krijgt de meeste kaarten in de groepsfase?",
+                "placeholder": "Winnaar",
+                "note": "",
+                "points": "24pt",
+                "id": "5"
+            },
+            {
+                "question": "Hoe ver komt Nederland?",
+                "placeholder": "Winnaar",
+                "note": "",
+                "points": "24pt",
+                "id": "6"
+            }
+        ],
+        "incremental": [
+            {
+                "question": "Wie is je supplier?",
+                "placeholder": "Lorenzo Pellegrini",
+                "points": "5",
+                "event": "assist",
+                "id": "7"
+            },
+            {
+                "question": "Wie is je schoffelaar?",
+                "placeholder": "Pepe",
+                "points": "5",
+                "event": "getoonde kaart",
+                "id": "8"
+            },
+            {
+                "question": "Wie is je supersub?",
+                "placeholder": "Wout Weghorst",
+                "points": "10",
+                "event": "doelpunt als invaller",
+                "id": "9"
+            }
+        ],
+        "range": [
+            {
+                "question": "Hoeveel doelpunten worden er gescoord?",
+                "placeholder": "WK 2022: 2,96 per wedstrijd",
+                "note": "104 wedstrijden in totaal\nBij gelijkspel wordt deze vraag gebruikt als tiebreaker.",
+                "points": "40",
+                "deviation": "1 goal",
+                "decrease": "8",
+                "id": "10"
+            }
+        ],
+        "rules": [
+            {
+                "rule": "Player of the Day",
+                "explanation": "Voor iedere kalenderdag wordt een losse ranking opgemaakt. Alle spelers die op die dag de hoogste score van alle deelnemers behaalden krijgen één bonuspunt. Deze regel geldt alleen tijdens de groepsfase en is exclusief bonuspunten.",
+                "exception": "Kalenderdagen worden bepaald op basis van de lokale tijd van het toernooi (VS). ChatGPT is uitgesloten van deze regel.",
+                "points": "1pt per dag"
+            }, 
+            {
+                "rule": "King/Queen of the Draws",
+                "explanation": "De speler die de meeste gelijkspellen heeft voorspeld in de groepsfase krijgt drie bonuspunten.",
+                "exception": "Bij gelijkspel krijgen alle spelers die dat aantal gelijkspellen hebben voorspeld de bonuspunten.",
+                "points": "3pt"
+            }, 
+            {
+                "rule": "Country Specialist",
+                "explanation": "Voor ieder land waarvan je alle drie uitslagen tijdens de groepsfase goed hebt voorspeld krijg je acht bonuspunten.",
+                "exception": "",
+                "points": "7pt per land"
+            }
+        ]
+    }
+}

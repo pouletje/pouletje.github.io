@@ -1,0 +1,388 @@
+{
+    "groups": {
+        "Groep A": [
+            {
+                "id": 1,
+                "homeTeam": "Mexico",
+                "awayTeam": "Zuid-Afrika"
+            },
+            {
+                "id": 2,
+                "homeTeam": "Zuid-Korea",
+                "awayTeam": "Tsjechië"
+            },
+            {
+                "id": 25,
+                "homeTeam": "Tsjechië",
+                "awayTeam": "Zuid-Afrika"
+            },
+            {
+                "id": 28,
+                "homeTeam": "Mexico",
+                "awayTeam": "Zuid-Korea"
+            },
+            {
+                "id": 53,
+                "homeTeam": "Zuid-Afrika",
+                "awayTeam": "Zuid-Korea"
+            },
+            {
+                "id": 54,
+                "homeTeam": "Tsjechië",
+                "awayTeam": "Mexico"
+            }
+        ],
+        "Groep B": [
+            {
+                "id": 3,
+                "homeTeam": "Canada",
+                "awayTeam": "Bosnië-Herzegovina"
+            },
+            {
+                "id": 5,
+                "homeTeam": "Qatar",
+                "awayTeam": "Zwitserland"
+            },
+            {
+                "id": 26,
+                "homeTeam": "Zwitserland",
+                "awayTeam": "Bosnië-Herzegovina"
+            },
+            {
+                "id": 27,
+                "homeTeam": "Canada",
+                "awayTeam": "Qatar"
+            },
+            {
+                "id": 49,
+                "homeTeam": "Zwitserland",
+                "awayTeam": "Canada"
+            },
+            {
+                "id": 50,
+                "homeTeam": "Bosnië-Herzegovina",
+                "awayTeam": "Qatar"
+            }
+        ],
+        "Groep C": [
+            {
+                "id": 6,
+                "homeTeam": "Brazilië",
+                "awayTeam": "Marokko"
+            },
+            {
+                "id": 7,
+                "homeTeam": "Haïti",
+                "awayTeam": "Schotland"
+            },
+            {
+                "id": 30,
+                "homeTeam": "Schotland",
+                "awayTeam": "Marokko"
+            },
+            {
+                "id": 31,
+                "homeTeam": "Brazilië",
+                "awayTeam": "Haïti"
+            },
+            {
+                "id": 51,
+                "homeTeam": "Marokko",
+                "awayTeam": "Haïti"
+            },
+            {
+                "id": 52,
+                "homeTeam": "Schotland",
+                "awayTeam": "Brazilië"
+            }
+        ],
+        "Groep D": [
+            {
+                "id": 4,
+                "homeTeam": "Verenigde Staten",
+                "awayTeam": "Paraguay"
+            },
+            {
+                "id": 8,
+                "homeTeam": "Australië",
+                "awayTeam": "Turkije"
+            },
+            {
+                "id": 29,
+                "homeTeam": "Verenigde Staten",
+                "awayTeam": "Australië"
+            },
+            {
+                "id": 32,
+                "homeTeam": "Turkije",
+                "awayTeam": "Paraguay"
+            },
+            {
+                "id": 59,
+                "homeTeam": "Paraguay",
+                "awayTeam": "Australië"
+            },
+            {
+                "id": 60,
+                "homeTeam": "Turkije",
+                "awayTeam": "Verenigde Staten"
+            }
+        ],
+        "Groep E": [
+            {
+                "id": 9,
+                "homeTeam": "Duitsland",
+                "awayTeam": "Curaçao"
+            },
+            {
+                "id": 11,
+                "homeTeam": "Ivoorkust",
+                "awayTeam": "Ecuador"
+            },
+            {
+                "id": 34,
+                "homeTeam": "Duitsland",
+                "awayTeam": "Ivoorkust"
+            },
+            {
+                "id": 35,
+                "homeTeam": "Ecuador",
+                "awayTeam": "Curaçao"
+            },
+            {
+                "id": 55,
+                "homeTeam": "Curaçao",
+                "awayTeam": "Ivoorkust"
+            },
+            {
+                "id": 56,
+                "homeTeam": "Ecuador",
+                "awayTeam": "Duitsland"
+            }
+        ],
+        "Groep F": [
+            {
+                "id": 10,
+                "homeTeam": "Nederland",
+                "awayTeam": "Japan"
+            },
+            {
+                "id": 12,
+                "homeTeam": "Zweden",
+                "awayTeam": "Tunesië"
+            },
+            {
+                "id": 33,
+                "homeTeam": "Nederland",
+                "awayTeam": "Zweden"
+            },
+            {
+                "id": 36,
+                "homeTeam": "Tunesië",
+                "awayTeam": "Japan"
+            },
+            {
+                "id": 57,
+                "homeTeam": "Japan",
+                "awayTeam": "Zweden"
+            },
+            {
+                "id": 58,
+                "homeTeam": "Tunesië",
+                "awayTeam": "Nederland"
+            }
+        ],
+        "Groep G": [
+            {
+                "id": 14,
+                "homeTeam": "België",
+                "awayTeam": "Egypte"
+            },
+            {
+                "id": 16,
+                "homeTeam": "Iran",
+                "awayTeam": "Nieuw-Zeeland"
+            },
+            {
+                "id": 38,
+                "homeTeam": "België",
+                "awayTeam": "Iran"
+            },
+            {
+                "id": 40,
+                "homeTeam": "Nieuw-Zeeland",
+                "awayTeam": "Egypte"
+            },
+            {
+                "id": 65,
+                "homeTeam": "Egypte",
+                "awayTeam": "Iran"
+            },
+            {
+                "id": 66,
+                "homeTeam": "Nieuw-Zeeland",
+                "awayTeam": "België"
+            }
+        ],
+        "Groep H": [
+            {
+                "id": 13,
+                "homeTeam": "Spanje",
+                "awayTeam": "Kaapverdië"
+            },
+            {
+                "id": 15,
+                "homeTeam": "Saoedi-Arabië",
+                "awayTeam": "Uruguay"
+            },
+            {
+                "id": 37,
+                "homeTeam": "Spanje",
+                "awayTeam": "Saoedi-Arabië"
+            },
+            {
+                "id": 39,
+                "homeTeam": "Uruguay",
+                "awayTeam": "Kaapverdië"
+            },
+            {
+                "id": 63,
+                "homeTeam": "Kaapverdië",
+                "awayTeam": "Saoedi-Arabië"
+            },
+            {
+                "id": 64,
+                "homeTeam": "Uruguay",
+                "awayTeam": "Spanje"
+            }
+        ],
+        "Groep I": [
+            {
+                "id": 17,
+                "homeTeam": "Frankrijk",
+                "awayTeam": "Senegal"
+            },
+            {
+                "id": 18,
+                "homeTeam": "Irak",
+                "awayTeam": "Noorwegen"
+            },
+            {
+                "id": 42,
+                "homeTeam": "Frankrijk",
+                "awayTeam": "Irak"
+            },
+            {
+                "id": 43,
+                "homeTeam": "Noorwegen",
+                "awayTeam": "Senegal"
+            },
+            {
+                "id": 61,
+                "homeTeam": "Noorwegen",
+                "awayTeam": "Frankrijk"
+            },
+            {
+                "id": 62,
+                "homeTeam": "Senegal",
+                "awayTeam": "Irak"
+            }
+        ],
+        "Groep J": [
+            {
+                "id": 19,
+                "homeTeam": "Argentinië",
+                "awayTeam": "Algerije"
+            },
+            {
+                "id": 20,
+                "homeTeam": "Oostenrijk",
+                "awayTeam": "Jordanië"
+            },
+            {
+                "id": 41,
+                "homeTeam": "Argentinië",
+                "awayTeam": "Oostenrijk"
+            },
+            {
+                "id": 44,
+                "homeTeam": "Jordanië",
+                "awayTeam": "Algerije"
+            },
+            {
+                "id": 71,
+                "homeTeam": "Algerije",
+                "awayTeam": "Oostenrijk"
+            },
+            {
+                "id": 72,
+                "homeTeam": "Jordanië",
+                "awayTeam": "Argentinië"
+            }
+        ],
+        "Groep K": [
+            {
+                "id": 21,
+                "homeTeam": "Portugal",
+                "awayTeam": "DR Congo"
+            },
+            {
+                "id": 24,
+                "homeTeam": "Oezbekistan",
+                "awayTeam": "Colombia"
+            },
+            {
+                "id": 45,
+                "homeTeam": "Portugal",
+                "awayTeam": "Oezbekistan"
+            },
+            {
+                "id": 48,
+                "homeTeam": "Colombia",
+                "awayTeam": "DR Congo"
+            },
+            {
+                "id": 69,
+                "homeTeam": "Colombia",
+                "awayTeam": "Portugal"
+            },
+            {
+                "id": 70,
+                "homeTeam": "DR Congo",
+                "awayTeam": "Oezbekistan"
+            }
+        ],
+        "Groep L": [
+            {
+                "id": 22,
+                "homeTeam": "Engeland",
+                "awayTeam": "Kroatië"
+            },
+            {
+                "id": 23,
+                "homeTeam": "Ghana",
+                "awayTeam": "Panama"
+            },
+            {
+                "id": 46,
+                "homeTeam": "Engeland",
+                "awayTeam": "Ghana"
+            },
+            {
+                "id": 47,
+                "homeTeam": "Panama",
+                "awayTeam": "Kroatië"
+            },
+            {
+                "id": 67,
+                "homeTeam": "Kroatië",
+                "awayTeam": "Ghana"
+            },
+            {
+                "id": 68,
+                "homeTeam": "Panama",
+                "awayTeam": "Engeland"
+            }
+        ]
+    }
+}
