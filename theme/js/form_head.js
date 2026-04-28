@@ -68,6 +68,17 @@ function createSelectField(ph, field_name, options, savedValue) {
         // Find which round this grid belongs to and only rebuild rounds after it
         const roundId = grid.id.replace('ko-', '').replace('-grid', '');
         refreshDownstreamSelects(roundId);
+
+        // DataLayer
+        const round = KO_ROUNDS.find(r => r.id === roundId);
+        const slotIndex = Array.from(grid.querySelectorAll('select')).indexOf(sel);
+        dl_koSelectionChanged(roundId, round ? round.label : roundId, slotIndex, sel.value);
+
+        // Fire round_completed if all slots in this round are now filled
+        const allSelects = Array.from(grid.querySelectorAll('select'));
+        if (allSelects.every(s => s.value !== '')) {
+            dl_koRoundCompleted(roundId, round ? round.label : roundId, allSelects.map(s => s.value));
+        }
     });
 
     return sel;
@@ -154,6 +165,7 @@ function autoFillR32(event) {
     const autofillbtn = document.getElementById('R32-autofill');
     if (autofillbtn) autofillbtn.innerText = 'Ververs';
 
+    dl_r32AutoFilled(r32_certain.length);
     refreshDownstreamSelects('r32');
 }
 
@@ -161,6 +173,9 @@ function autoFillR32(event) {
 function confirmSubmit(e) {
     if (!confirm('Zeker weten?\nJe kan het niet meer aanpassen.\n\nWacht tot je inzending is verwerkt en je "Success" ziet, dit kan ongeveer 5-25 sec duren.')) {
         e.preventDefault();
+        dl_formSubmitCancelled();
+    } else {
+        dl_formSubmitted();
     }
 }
 
@@ -343,6 +358,28 @@ function makeRankings() {
 }
 
 // Navigation functions
+// Resolve a page label from index for datalayer
+function dl_pageLabel(index) {
+    const groupDivs = document.querySelectorAll('.group');
+    const el = groupDivs[index];
+    if (!el) return '(unknown)';
+    if (index === 0) return 'welcome';
+    if (el.id === 'knockout-page') return 'Knockouts';
+    const title = el.querySelector('.group-title');
+    return title ? title.innerText : `page-${index}`;
+}
+
+function dl_pageType(index) {
+    const groupDivs = document.querySelectorAll('.group');
+    const el = groupDivs[index];
+    if (!el) return 'unknown';
+    if (index === 0) return 'welcome';
+    if (el.id === 'knockout-page') return 'knockout';
+    if (el.querySelector('.bonus-questions-list')) return 'bonus';
+    if (el.querySelector('.group-matchlist')) return 'group';
+    return 'rules';
+}
+
 function showGroup(groupIndex) {
     updatePouleWinnerPlaceholder();
     const groupDivs = document.querySelectorAll('.group');
@@ -361,6 +398,8 @@ function showGroup(groupIndex) {
     document.getElementById('prevButton').style.display = groupIndex === 0 ? 'none' : 'inline-block';
     document.getElementById('nextButton').style.display = groupIndex === groupDivs.length - 1 ? 'none' : 'inline-block';
     document.getElementById('submitButton').style.display = groupIndex === groupDivs.length - 1 ? 'inline-block' : 'none';
+
+    dl_pageView(groupIndex, dl_pageType(groupIndex), dl_pageLabel(groupIndex));
 }
 
 function showPrevGroup() {
@@ -389,6 +428,11 @@ function showNextGroup() {
     if (allFieldsFilled && currentGroupIndex < groups.length - 1) {
         currentGroupIndex++;
         showGroup(currentGroupIndex);
+    } else if (!allFieldsFilled) {
+        const emptyNames = Array.from(fields)
+            .filter(f => f.value.trim() === '')
+            .map(f => f.name || f.id || '(unnamed)');
+        dl_validationFailed(dl_pageLabel(currentGroupIndex), emptyNames);
     }
 }
 

@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 <label for="username">Naam: </label>
                 <input id="username" type="text" placeholder="Ronald Koeman" name="username">
             `;
+            // DataLayer: track when user sets their name
+            nameInputFieldSpan.querySelector('input').addEventListener('blur', e => {
+                if (e.target.value.trim()) dl_usernameSet(e.target.value.trim());
+            });
 
             startDiv.appendChild(startTitle);
             startDiv.appendChild(nameInputFieldSpan);
@@ -68,6 +72,28 @@ document.addEventListener("DOMContentLoaded", function() {
                         if (awayInput.value === '0') awayInput.value = '';
                     });
 
+                    // DataLayer: fire when either score input loses focus
+                    const fireScoreEvent = () => {
+                        const hs = Number(homeInput.value);
+                        const as_ = Number(awayInput.value);
+                        if (homeInput.value !== '' && awayInput.value !== '') {
+                            dl_scoreChanged(
+                                String(match.id),
+                                match.homeTeam,
+                                match.awayTeam,
+                                hs, as_,
+                                groupName
+                            );
+                        }
+                        // Check if all matches in this group are now filled
+                        const allScores = Array.from(groupMatchlist.querySelectorAll('input'));
+                        if (allScores.every(i => i.value !== '')) {
+                            dl_groupCompleted(groupName, matches.length);
+                        }
+                    };
+                    homeInput.addEventListener('blur', fireScoreEvent);
+                    awayInput.addEventListener('blur', fireScoreEvent);
+
                     groupMatchlist.appendChild(matchLi);
                 });
 
@@ -110,6 +136,9 @@ document.addEventListener("DOMContentLoaded", function() {
                             <br>
                             <span class="note">${question.note}</span>
                         `;
+                        questionLi.querySelector('input').addEventListener('blur', e => {
+                            if (e.target.value.trim()) dl_bonusAnswered(question.id, question.question, e.target.value.trim());
+                        });
                         questionsList.appendChild(questionLi);
                     });
                     data.bonus.incremental.forEach(question => {
@@ -119,6 +148,9 @@ document.addEventListener("DOMContentLoaded", function() {
                             <label for="question-${question.id}">${question.question} <span class="points">${question.points}pt per ${question.event}</span></label>
                             <input type="text" id="question-${question.id}" name="question-${question.id}" placeholder="${question.placeholder}" required>
                         `;
+                        questionLi.querySelector('input').addEventListener('blur', e => {
+                            if (e.target.value.trim()) dl_bonusAnswered(question.id, question.question, e.target.value.trim());
+                        });
                         questionsList.appendChild(questionLi);
                     });
                     data.bonus.range.forEach(question => {
@@ -132,6 +164,9 @@ document.addEventListener("DOMContentLoaded", function() {
                             <br>
                             <span class="note">${question.note}</span>
                         `;
+                        questionLi.querySelector('input').addEventListener('blur', e => {
+                            if (e.target.value.trim()) dl_bonusAnswered(question.id, question.question, e.target.value.trim());
+                        });
                         questionsList.appendChild(questionLi);
                     });
                     bonusDiv.appendChild(bonusTitle);
@@ -161,6 +196,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     bonusRulesDiv.appendChild(bonusRulesList);
                     groupList.appendChild(bonusRulesDiv);
                     document.dispatchEvent(loadFormDataTrigger);
+                    const hadSavedData = !!localStorage.getItem('form_data_wk2026');
+                    dl_formLoaded(hadSavedData);
                 });
 
             // Save on any input change
